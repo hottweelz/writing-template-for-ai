@@ -44,7 +44,8 @@ Before ending the task, review the changed work against:
 4. The Stage 2 quality gates in `BOOK_BLUEPRINT.md` §10.
 5. The book length and pacing rule in `.ai/rules/book-length-and-pacing.md`.
 6. The prose quality protocols in `.ai/rules/prose-quality-protocols.md`.
-7. The next recommended step, which must advance the unfinished book.
+7. Before completing the editorial pass, run `.ai/rules/canon-mutation-control.md` and include canon mutation status in the handoff.
+8. The next recommended step, which must advance the unfinished book.
 
 Fix editorial issues found during the pass in the same execution cycle whenever the fix is clear. If an issue requires an author decision, leave the manuscript stable, record the decision needed, and keep the next recommended step concrete.
 

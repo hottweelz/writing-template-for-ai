@@ -22,6 +22,7 @@ For any book-planning, drafting, revision, scene-planning, or production task, a
 - `.ai/rules/book-length-and-pacing.md`
 - `.ai/rules/publication-boundary.md`
 - `.ai/rules/prose-quality-protocols.md`
+- `.ai/rules/canon-mutation-control.md` — required for all planning, drafting, revision, editorial, and manuscript-production tasks.
 
 If `MEMORY.md` does not exist, create it using the starter structure in this file before continuing.
 
