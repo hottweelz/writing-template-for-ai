@@ -1,0 +1,34 @@
+name: build-smoke
+
+# Smoke test: prove the manuscript still assembles and exports.
+# Catches a broken manifest, a bad path, or a build-script regression
+# before it reaches anyone who clones the template.
+
+on:
+  push:
+    paths:
+      - "manuscript/**"
+      - "scripts/**"
+      - ".github/workflows/build-smoke.yml"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble manuscript (no external deps)
+        run: |
+          bash scripts/build.sh --md-only
+          test -s build/manuscript.full.md
+          echo "Assembled $(wc -l < build/manuscript.full.md) lines from the manifest."
+
+      - name: Install pandoc and export EPUB
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq pandoc
+          bash scripts/build.sh
+          test -f build/book.epub
+          echo "EPUB export OK: $(ls -la build/book.epub)"
