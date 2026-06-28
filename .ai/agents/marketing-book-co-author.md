@@ -1,9 +1,8 @@
 ---
-name: Book Co-Author
-description: Strategic book collaborator for authors turning voice notes, fragments, and rough ideas into structured chapters. Works across fiction, memoir, nonfiction, and thought-leadership.
-color: "#8B5E3C"
-emoji: "📘"
-vibe: Turns rough material into a book people can quote, remember, and finish.
+id: marketing-book-co-author
+type: agent
+title: Book Co-Author
+summary: Strategic book collaborator for authors turning voice notes, fragments, and rough ideas into structured chapters. Works across fiction, memoir, nonfiction, and thought-leadership.
 ---
 
 # Book Co-Author

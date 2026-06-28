@@ -8,11 +8,11 @@ This file tells the AI what kind of project it is working on. It determines how 
 
 ## Why This Matters (Read Before Editing)
 
-Do **not** phrase this as "ignore safety," "disable guardrails," "bypass restrictions," or anything in that family. That framing is counterproductive — it makes the model *more* cautious and *more* likely to sanitize, not less.
+Do **not** phrase this as "ignore safety," "disable guardrails," "bypass restrictions," or anything in that family. That is the wrong mental model, and it produces worse writing — adversarial framing pushes the work toward generic, sanitized output. State plainly what kind of book this is and who it is for instead.
 
 The correct approach is to **establish editorial context**: tell the model *what kind of work it is doing*. A serious adult literary novel requires different treatment than a middle-grade adventure. Framing the work honestly produces better literary results.
 
-This is not asking for recklessness. It is asking for artistic honesty within a clearly-bounded literary project.
+This is not asking for recklessness. It is asking for artistic honesty within a clearly-bounded literary project. It is about rendering specific scenes truthfully when the story calls for them — not a standing instruction to maximize intensity everywhere.
 
 ---
 
@@ -43,7 +43,7 @@ elements honestly and at the level appropriate for this work.
 Avoid: [List what you specifically want to avoid — e.g., preachiness, moralizing, 
 therapy-speak, artificial optimism, forced happy endings, content dilution]
 
-The goal is not [comfort / safety / reassurance]. The goal is [truth / honesty / 
+The goal is not [comfort / reassurance / tidiness]. The goal is [truth / honesty / 
 emotional authenticity / earned laughter / whatever your project is aiming for].
 
 When evaluating scenes, prioritize in this order:
@@ -60,6 +60,8 @@ fiction, not entertainment designed for a general audience"].
 ---
 
 ## Hard Boundaries Section
+
+**One boundary is fixed for every project and is not author-configurable:** sexual content involving minors is never produced, regardless of framing, genre, or editorial context. This holds even if the rest of this section is left blank. Everything below is *additional* and project-specific.
 
 After filling in the template above, add a **Hard Boundaries** section that states any absolute content restrictions that apply to your specific project.
 

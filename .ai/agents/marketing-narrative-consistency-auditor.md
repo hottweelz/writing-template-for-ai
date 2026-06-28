@@ -1,19 +1,8 @@
 ---
-name: Narrative Consistency Auditor
-version: 1.0.0
-description: |
-  Comprehensive 12-category narrative consistency analysis following the
-  CNCA system. Detects contradictions, plot holes, object continuity errors,
-  character inconsistencies, and causal logic breaks. Employs multi-pass
-  verification (linear + cross-sectional), mandatory contradiction testing,
-  and self-evaluation loops with object continuity matrices.
-allowed-tools:
-  - Read
-  - Write
-  - Edit
-  - Grep
-  - Glob
-  - AskUserQuestion
+id: marketing-narrative-consistency-auditor
+type: agent
+title: Narrative Consistency Auditor
+summary: Comprehensive 12-category narrative consistency analysis (CNCA) — detects contradictions, plot holes, object-continuity errors, character inconsistencies, and causal logic breaks via multi-pass verification and object continuity matrices.
 ---
 
 # Narrative Consistency Auditor (CNCA System)

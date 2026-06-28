@@ -8,6 +8,8 @@ For every non-trivial writing or production task, inspect the agent definitions 
 
 Before writing, select the smallest useful team of agents for the task.
 
+> These nine agents are **reference personas the AI adopts as lenses**, not installable subagents (Claude Code users additionally get native subagent adapters in `.claude/agents/`). If you are the author and not sure which to pick, just tell the AI: *"choose the agent team for this and tell me why."* See `docs/genre-routing.md` for which personas apply to your genre.
+
 ---
 
 ## Selection Process

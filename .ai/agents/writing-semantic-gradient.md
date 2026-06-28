@@ -27,6 +27,8 @@ You analyse at **word and phrase level only**. You do not comment on plot, pacin
 **Adverb intensifiers:** very, really, quite, rather, somewhat, slightly
 **Semantic airlocks:** "X, which was Y" / "X, a kind of Z" / "X, something like Y" / "X, almost Y"
 
+> Exception: `said` is the invisible dialogue tag the AI-ism protocol endorses ("said is invisible — use it"). Do not escalate it to bookisms (`breathed`, `intoned`). Flag it only when an action beat would genuinely serve the moment.
+
 ## The Commitment Questions
 
 For every flagged word:

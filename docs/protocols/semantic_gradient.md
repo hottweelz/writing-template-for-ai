@@ -30,6 +30,8 @@ Prose scaffolding that needs to become architecture. The author must make the co
 - **Speech:** said, told, asked, answered
 - **Cognition:** thought, wondered, considered
 
+> **Exception — dialogue tags.** `said` (and plain `asked`/`told`) are the invisible default the AI-ism suppression protocol explicitly endorses ("*'Said' is invisible. Use it.*"). Do **not** push these toward "bookism" replacements (`breathed`, `intoned`, `retorted`) — that is itself an AI/amateur tell. Flag a speech verb only when an action beat or a genuinely stronger choice serves the moment, never to escalate a clean `said`.
+
 **Adjectives to flag:**
 - **Size:** big, small, medium
 - **Quality:** good, bad, nice, hard, soft

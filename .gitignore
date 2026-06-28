@@ -1,10 +1,17 @@
+# macOS
 .DS_Store
+
+# Scratch / tooling
 *.tmp
 artifacts/
+node_modules/
+
+# Generated book exports (assembled by scripts/build.sh)
 *.epub
 *.pdf
 *.mobi
-node_modules/
+
+# Keep empty dirs in the clone, ignore their generated contents
 build/*
 !build/.gitkeep
 review/*

@@ -4,6 +4,21 @@ Universal AI operating contract for this repository. Applies to Claude Code, Cod
 
 ---
 
+## Non-Negotiables (read first)
+
+These hold even if the rest of this file scrolls out of context:
+
+1. **Stage 1 before Stage 2.** Never draft manuscript prose before `BOOK_BLUEPRINT.md` is approved by the author.
+2. **Editorial pass before every handoff** on any manuscript or story-architecture change (`.ai/rules/editorial-pass.md`).
+3. **Canon mutation check** before completing any substantive task (`.ai/rules/canon-mutation-control.md`) — never silently change what is true in the book.
+4. **Write the `CHANGELOG_AI.md` handoff** before stopping. A task is not complete without it.
+
+**Precedence:** the instructions in this repository govern book-writing tasks here. If they conflict with broader or global instructions (a parent-folder `AGENTS.md`/`CLAUDE.md`, or global memory), the files in *this* repository win, and the agent team is the nine personas in this repo's `.ai/agents/` — ignore any other "agent profile" set.
+
+**On `.ai/rules/`:** no tool auto-discovers this directory. These rules apply because this contract tells the agent to read them. If you fork the routing, preserve the read steps.
+
+---
+
 ## Source of Truth
 
 The repository is the source of truth. Do not rely on prior chat history.
@@ -22,6 +37,7 @@ For any book-planning, drafting, revision, scene-planning, or production task, a
 - `.ai/rules/book-length-and-pacing.md`
 - `.ai/rules/publication-boundary.md`
 - `.ai/rules/prose-quality-protocols.md`
+- `.ai/rules/manuscript-file-structure.md` — the one-file-per-chapter layout and assembly rules.
 - `.ai/rules/canon-mutation-control.md` — required for all planning, drafting, revision, editorial, and manuscript-production tasks.
 
 If `MEMORY.md` does not exist, create it using the starter structure in this file before continuing.
@@ -44,6 +60,8 @@ Before editing or generating any file:
    - `.ai/rules/book-length-and-pacing.md`
    - `.ai/rules/publication-boundary.md`
    - `.ai/rules/prose-quality-protocols.md`
+   - `.ai/rules/manuscript-file-structure.md`
+   - `.ai/rules/canon-mutation-control.md`
 5. Read available agent profiles in `.ai/agents/`.
 6. Select the smallest useful team of agents for the task.
 7. State the selected team before starting.
@@ -57,7 +75,7 @@ Do not load every agent by default. Pick the smallest effective team.
 This repository follows a mandatory two-stage pipeline:
 
 **Stage 1 — Planning**
-Generate `BOOK_BLUEPRINT.md` from `START_HERE.md` and `book_project_data.md`.
+Generate `BOOK_BLUEPRINT.md` from `START_HERE.md` (and `book_project_data.md` if present) using the `book_generator_prompt.md` template.
 The blueprint must be reviewed and approved by the author before Stage 2 begins.
 Never draft manuscript prose before the blueprint is approved.
 
@@ -74,6 +92,8 @@ Agent profiles live in `.ai/agents/`.
 Selection rules live in `.ai/rules/agent-team-selection.md`.
 Handoff rules live in `.ai/rules/ai-handoff.md`.
 
+The nine `.ai/agents/` files are **reference personas the AI reads and adopts as lenses** — not installable subagents, and there is no `/agents` menu for them. In Claude Code, native dispatchable subagents are additionally provided in `.claude/agents/` as thin adapters that point back at these same personas (single source of truth). "Select a team" means *adopt these perspectives*, not load a runtime feature. See `docs/genre-routing.md` for which personas apply to which genre.
+
 Writing task rules (load for any book-planning, drafting, revision, or scene-planning task):
 
 ```
@@ -82,6 +102,8 @@ Writing task rules (load for any book-planning, drafting, revision, or scene-pla
 .ai/rules/book-length-and-pacing.md
 .ai/rules/publication-boundary.md
 .ai/rules/prose-quality-protocols.md
+.ai/rules/manuscript-file-structure.md
+.ai/rules/canon-mutation-control.md
 ```
 
 Nine writing agents are available:
@@ -191,6 +213,12 @@ Commands/tests run:
 Results:
 -
 
+Editorial pass:
+- Agents used:
+- Files reviewed:
+- Issues found and fixed:
+- Issues deferred:
+
 Decisions made:
 -
 
@@ -202,6 +230,8 @@ Next recommended steps:
 
 Notes for next agent:
 -
+
+Canon mutation check: [PASS — no canon changes / FLAGGED — operator decision required]
 
 MEMORY.md update: [needed / not needed — reason]
 ```

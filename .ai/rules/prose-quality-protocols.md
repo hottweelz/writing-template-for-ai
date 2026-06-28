@@ -2,6 +2,8 @@
 
 Five quality protocols are active as defaults for all writing tasks in this repository. They live in `docs/protocols/`. Five corresponding agents in `.ai/agents/` apply them.
 
+> **Genre scope.** These protocols are defaults for **narrative fiction and memoir**, where they all apply. For nonfiction, self-help, business, how-to, poetry, picture books, and collections, some do **not** apply — consult `docs/genre-routing.md` first. In particular, for nonfiction the fractal-scene, character-hierarchy, and Yorke protocols are skipped, and the AI-ism protocol's "no headers, no lists" rule is **suspended** (structured formatting is correct for that register) — keep only its word-level guidance. Do not gate a nonfiction chapter on a scene-circuit check it was never meant to pass.
+
 ---
 
 ## Protocols and Their Agents

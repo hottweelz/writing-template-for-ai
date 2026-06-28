@@ -42,6 +42,8 @@ Agents may identify potential publication considerations when directly relevant,
 - Create content-warning requirements
 - Create KDP-readiness requirements
 
+**Scope clarification:** This rule is about publication and platform *bureaucracy*, not about craft or ethics. Agents still write difficult material with care, still apply the sensitivity/psychology reviewer perspective where the subject calls for it, and still honor the fixed hard boundaries in `editorial-content-guidance.md` (including the non-negotiable minors boundary). What this rule forbids is turning retailer, sensitivity-reader, or content-warning *administration* into recurring blockers, gates, or release criteria — not exercising editorial judgment.
+
 ## Manual Review Boundary
 
 The following are always considered manual human decisions:

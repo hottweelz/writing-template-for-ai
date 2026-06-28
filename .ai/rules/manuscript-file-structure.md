@@ -22,10 +22,10 @@ manuscript/
     01-acknowledgments.md
     02-author-note.md
 build/                     # generated only; never hand-edited, never committed as source
-  manuscript.full.md       # concatenation of manifest order → fed to EPUB/PDF pipeline
+  manuscript.full.md       # concatenation of manifest order → built by scripts/build.sh into EPUB/PDF
 ```
 
-Parts and acts are represented by part-divider files (`part-1.md`, `part-2.md`) inserted between chapter files in `manifest.md`.
+Parts and acts are represented by part-divider files in `manuscript/chapters/` (`part-1.md`, `part-2.md`) inserted between chapter files via `manifest.md`. Each contains exactly one `## Part N — Title` heading. See `manuscript/chapters/part-1.md` for an example.
 
 ---
 
@@ -42,4 +42,4 @@ Parts and acts are represented by part-divider files (`part-1.md`, `part-2.md`) 
 
 ## Production
 
-The EPUB/PDF pipeline concatenates files in `manifest.md` order into `build/manuscript.full.md`, then generates EPUB and print PDF. The per-chapter source files remain the authoritative manuscript.
+`scripts/build.sh` concatenates files in `manifest.md` order into `build/manuscript.full.md`, then (via pandoc) generates EPUB and print PDF. The per-chapter source files remain the authoritative manuscript. See the README "Producing your book file" section for how to run it.

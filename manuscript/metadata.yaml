@@ -1,0 +1,22 @@
+# Book metadata for the EPUB/PDF export (read by scripts/build.sh via pandoc).
+#
+# Fill these in before you export. Everything here is optional — pandoc will
+# build a valid EPUB even if you leave the defaults — but title and author make
+# the file look finished and let e-readers shelve it correctly.
+#
+# This file holds the *machine-readable* metadata. The human-facing title page
+# still lives in manuscript/front/01-title.md.
+
+title: "[Book Title]"
+author: "[Author Name]"
+language: en-US
+rights: "© [Year] [Author Name]. All rights reserved."
+
+# Optional cover image for the EPUB. Drop a file at manuscript/cover.png
+# (ideal size ~1600x2560) and uncomment the next line.
+# cover-image: manuscript/cover.png
+
+# Optional identifier. For an ebook you do NOT need an ISBN; you can leave this
+# out, use your own ISBN, or let your retailer assign one. See the README
+# "Scope" note for what publishing steps are yours to handle.
+# identifier: "[ISBN or other identifier]"

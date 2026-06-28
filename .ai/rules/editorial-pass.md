@@ -32,6 +32,8 @@ Add `marketing-book-co-author` when drafting or revising chapter prose.
 
 Do not load every agent by default. Pick the smallest team that covers the risk.
 
+> **Genre note.** The team and the §10 quality gates below assume narrative fiction/memoir. For nonfiction (self-help, business, how-to, essay), substitute per `docs/genre-routing.md`: replace the scene-circuit and character-hierarchy checks with a **chapter-promise / argument-and-evidence** check, and lead with `academic-narratologist` (thesis & chapter logic), `marketing-book-co-author` (argument & voice), and `marketing-narrative-consistency-auditor` (claim/evidence consistency). The canon-mutation check and handoff requirements still apply to every genre.
+
 ---
 
 ## Required Pass

@@ -4,7 +4,13 @@ Fill this in before you do anything else. The AI reads this file to understand w
 
 You don't need to have everything figured out. Rough answers are fine. The AI will build a complete plan from whatever you give it, and you'll review and refine that plan before any writing starts.
 
-This takes about 10 minutes.
+This takes about 10–30 minutes. There are no wrong answers, and any question you're unsure about is safe to leave rough or blank — the AI will make smart suggestions and you can fix them later.
+
+**A few terms you'll see below:**
+- **Want vs. need** — what your character is *chasing* (the want) vs. what they're actually *missing inside* (the need). Example: he *wants* to win the championship; he *needs* to forgive his father.
+- **Emotional core** — the single feeling the book is really about underneath the plot.
+- **Theme** — what the book is *about* beneath what *happens* (grief, belonging, power, and so on).
+- **Comps** ("comparable works") — existing books, films, or shows in the same lane as yours, used as reference points, not blueprints.
 
 ---
 
@@ -81,7 +87,7 @@ How should it feel to read this book? Examples: dark and literary, propulsive an
 
 ## 9. What does it remind you of?
 
-List books, films, shows, songs, or other works that live in the same lane as yours. Even partial matches are useful. The AI uses these as reference points, not as blueprints.
+List books, films, shows, songs, or other works that live in the same lane as yours. (In publishing these are called your *comps*.) Even partial matches are useful. The AI uses these as reference points, not as blueprints.
 
 > [Your answer here]
 
@@ -139,7 +145,7 @@ Paste any notes, scenes, fragments, research, memories, character ideas, dialogu
 
 Once you've filled this in, give your AI tool this instruction:
 
-> "Read AGENTS.md and START_HERE.md. Generate BOOK_BLUEPRINT.md."
+> "Read AGENTS.md, START_HERE.md, and book_project_data.md, then generate BOOK_BLUEPRINT.md using the book_generator_prompt.md template."
 
 The AI will build a complete book plan from your answers. You'll review it, adjust anything that feels wrong, and then approve it before any writing starts.
 

@@ -80,6 +80,8 @@ Next recommended steps:
 Notes for next agent:
 - 
 
+Canon mutation check: [PASS — no canon changes / FLAGGED — operator decision required]
+
 MEMORY.md update: [needed — reason / not needed — reason]
 ```
 

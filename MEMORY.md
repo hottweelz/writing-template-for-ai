@@ -15,7 +15,7 @@ Chronological handoffs live in `CHANGELOG_AI.md` — do not duplicate them here.
 ## Source of truth
 
 - Repo files and `CHANGELOG_AI.md` are authoritative. Do not rely on chat history.
-- `AGENTS.md` is the universal cross-tool contract. `CLAUDE.md` and `GEMINI.md` are thin shims pointing to it.
+- `AGENTS.md` is the universal cross-tool contract. `CLAUDE.md`, `GEMINI.md`, and `.github/copilot-instructions.md` are thin shims pointing to it.
 - Startup: read `CHANGELOG_AI.md`, `MEMORY.md`, `.ai/rules/*`; select the smallest useful agent team from `.ai/agents/` and state it before working.
 
 ---

@@ -4,7 +4,7 @@
 
 To generate it: give your AI tool this instruction after filling in `START_HERE.md`:
 
-> "Read AGENTS.md, START_HERE.md, and book_project_data.md. Generate BOOK_BLUEPRINT.md using the book_generator_prompt.md template."
+> "Read AGENTS.md, START_HERE.md, and book_project_data.md, then generate BOOK_BLUEPRINT.md using the book_generator_prompt.md template."
 
 Review the generated blueprint carefully. The AI will make smart assumptions where you left blanks — change anything that feels wrong. Once you're satisfied, tell your AI:
 
