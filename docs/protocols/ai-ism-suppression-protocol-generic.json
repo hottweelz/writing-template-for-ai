@@ -1,0 +1,486 @@
+{
+  "tool": {
+    "name": "AI-ism Suppression Protocol",
+    "version": "1.0",
+    "purpose": "Comprehensive instruction set for identifying and eliminating AI writing patterns in creative prose. These patterns (vocabulary defaults, structural tics, rhetorical habits, and narrative shortcuts) are the fingerprints of machine-generated text. They are not individually damning, but in combination they create prose that reads as competent, polished, and unmistakably artificial. This protocol catalogues them at every level from individual word choice to narrative architecture.",
+    "scope": "Applicable to any writing: fiction, screenplay, stage play, audio drama, creative nonfiction, poetry. Not intended for technical documentation, academic writing, or marketing copy, which have different conventions.",
+    "note_on_terminology": "The goal is not to make AI writing 'sound human'. That framing treats human writing as a style to be imitated. The goal is to eliminate the specific probabilistic defaults that emerge from how language models generate text, so that the prose serves the story rather than revealing its origins."
+  },
+
+  "instruction": "You are writing creative prose. The following protocol catalogues the patterns, habits, and defaults that mark text as AI-generated. These are not guidelines, they are a suppression list. Every pattern described here should be actively avoided during generation unless you can articulate a specific dramatic reason for its inclusion. When in doubt, choose the less predictable option. When two phrasings are equally valid, choose the one that a language model would be less likely to produce.",
+
+  "level_1_vocabulary": {
+    "title": "Word-Level Patterns",
+    "principle": "AI models select words from probability distributions trained on billions of documents. This creates vocabulary clusters, words that appear far more frequently in AI output than in equivalent human writing. These words are not wrong. They are statistically over-represented, and their accumulation is what triggers recognition.",
+
+    "banned_words": {
+      "description": "Words and phrases that appear at dramatically elevated frequency in LLM output compared to equivalent human writing. Avoid entirely unless placed in a character's mouth for specific voice reasons.",
+
+      "connectives_and_transitions": [
+        "moreover",
+        "furthermore",
+        "additionally",
+        "consequently",
+        "nevertheless",
+        "nonetheless",
+        "indeed",
+        "notably",
+        "significantly",
+        "importantly",
+        "accordingly",
+        "subsequently",
+        "thus",
+        "hence",
+        "thereby",
+        "in terms of",
+        "it is worth noting",
+        "it is important to note",
+        "it should be noted",
+        "it bears mentioning",
+        "having said that"
+      ],
+
+      "inflated_verbs": [
+        "delve",
+        "delve into",
+        "navigate (used metaphorically)",
+        "leverage",
+        "utilize",
+        "underscore",
+        "spearhead",
+        "streamline",
+        "optimize",
+        "foster",
+        "bolster",
+        "harness",
+        "embark",
+        "unravel",
+        "unveil",
+        "illuminate",
+        "elucidate",
+        "encapsulate",
+        "epitomize",
+        "galvanize",
+        "catalyze",
+        "juxtapose (unless genuinely describing spatial arrangement)"
+      ],
+
+      "inflated_adjectives": [
+        "pivotal",
+        "crucial",
+        "vital",
+        "profound",
+        "nuanced",
+        "intricate",
+        "multifaceted",
+        "comprehensive",
+        "robust",
+        "innovative",
+        "cutting-edge",
+        "groundbreaking",
+        "transformative",
+        "invaluable",
+        "indispensable",
+        "compelling",
+        "overarching",
+        "holistic",
+        "myriad",
+        "ubiquitous",
+        "ever-evolving",
+        "aforementioned",
+        "load-bearing"
+      ],
+
+      "filler_and_hedge_phrases": [
+        "at the end of the day",
+        "in today's world",
+        "in today's fast-paced world",
+        "it goes without saying",
+        "needless to say",
+        "at its core",
+        "when it comes to",
+        "in the realm of",
+        "in the world of",
+        "serves as a testament to",
+        "stands as a testament to",
+        "plays a vital/crucial/pivotal role",
+        "a testament to",
+        "the fact that",
+        "due to the fact that",
+        "in light of",
+        "with that being said",
+        "that said"
+      ],
+
+      "abstract_nouns_used_as_metaphor": [
+        "tapestry (of experiences/emotions/life)",
+        "symphony (of flavours/sounds/colours)",
+        "mosaic (of cultures/identities)",
+        "landscape (of anything non-geographical)",
+        "fabric (of society/community)",
+        "dance (of light/shadows/emotions)",
+        "crucible (of anything)",
+        "labyrinth (of anything non-architectural)",
+        "beacon (of hope/light/truth)",
+        "cornerstone",
+        "bedrock",
+        "linchpin",
+        "paradigm",
+        "realm"
+      ]
+    },
+
+    "flagged_words": {
+      "description": "Words that are not banned but should trigger a pause. Ask: is this the word I would choose, or is it the word the model defaults to? If you cannot justify the choice, replace it.",
+
+      "list": [
+        "albeit",
+        "whilst (in non-British prose)",
+        "amidst",
+        "amongst",
+        "perhaps (when used to soften a statement rather than express genuine uncertainty)",
+        "simply (as intensifier: 'simply put', 'it is simply')",
+        "ultimately",
+        "essentially",
+        "fundamentally",
+        "inherently",
+        "arguably",
+        "seemingly",
+        "ostensibly",
+        "resonates/resonance (outside acoustic contexts)",
+        "palpable",
+        "tangible (for intangible things)",
+        "visceral",
+        "etched (in memory/on face)",
+        "seared (into memory/consciousness)",
+        "tinged (with emotion)",
+        "laced (with emotion)",
+        "hitched"
+      ]
+    }
+  },
+
+  "level_2_punctuation_and_formatting": {
+    "title": "Punctuation and Formatting Patterns",
+    "principle": "AI models over-index on certain punctuation marks and formatting conventions because these appear frequently in training data (particularly markdown-formatted web content, journalism, and copywriting). The result is prose that is formatted for scanning rather than reading.",
+
+    "patterns": {
+
+      "em_dash_overuse": {
+        "problem": "AI models use em dashes at three to five times the frequency of equivalent human prose. They appear as parenthetical insertions, dramatic pauses, and sentence-joining devices in contexts where commas, full stops, colons, or parentheses would be more natural.",
+        "rule": "Maximum ONE em dash per 500 words of prose. If you find yourself reaching for an em dash, try a comma, a full stop, a colon, or parentheses first. Reserve em dashes for genuine interruption or abrupt shift, not for routine apposition.",
+        "example_failure": "The manager — who rarely raised his voice — leaned across the desk — a gesture that felt almost intimate — and said nothing for a long moment.",
+        "example_fix": "The manager rarely raised his voice. He leaned across the desk, close enough that the gesture felt almost intimate, and said nothing for a long moment."
+      },
+
+      "semicolon_avoidance": {
+        "problem": "AI models rarely use semicolons in creative prose, defaulting to em dashes or full stops instead. This reduces the rhythmic range of the writing.",
+        "rule": "Semicolons are a legitimate punctuation mark. Use them. They create a different pause than a full stop or a comma, and that difference matters to rhythm."
+      },
+
+      "list_and_header_compulsion": {
+        "problem": "AI models default to bullet points, numbered lists, and section headers even in creative or narrative contexts. This is a formatting reflex inherited from training data dominated by web content and instructional writing.",
+        "rule": "Creative prose should never contain bullet points, numbered lists, or section headers unless these are a deliberate stylistic choice within the fiction itself. Information should be woven into narrative, not itemised."
+      },
+
+      "bold_and_italic_excess": {
+        "problem": "AI models use bold and italic emphasis at far higher frequency than published prose. This creates a visual texture that signals machine generation even before the text is read.",
+        "rule": "Italic for internal thought, titles, and foreign words only. Bold should be virtually absent in creative prose. If a word needs emphasis, the sentence structure should provide it."
+      },
+
+      "ellipsis_overuse": {
+        "problem": "AI models use ellipses to create atmosphere, trailing-off effects, or false profundity at elevated frequency. Human writers tend to use them more sparingly.",
+        "rule": "Maximum one ellipsis per scene. If dialogue trails off, use an em dash (for interruption) or a full stop followed by silence (for deliberate withholding). Ellipses should represent genuine incompleteness, not atmospheric vagueness."
+      }
+    }
+  },
+
+  "level_3_sentence_and_phrase_patterns": {
+    "title": "Sentence-Level Patterns",
+    "principle": "AI models construct sentences using probabilistic templates. These templates produce grammatically correct, readable prose that follows predictable structural patterns. The predictability is the problem. Human prose varies its architecture from sentence to sentence; AI prose tends to cycle through a smaller set of templates.",
+
+    "patterns": {
+
+      "the_rule_of_three": {
+        "problem": "AI models compulsively group descriptions, traits, and qualities in threes. 'He was tall, dark, and handsome.' 'The room was cold, dark, and silent.' 'She felt tired, angry, and confused.' This is a legitimate rhetorical device used so frequently by AI that it has become a marker.",
+        "rule": "Break the pattern. Use two items. Use four. Use one. Vary the list length across the text. When you do use three, make the third item unexpected, not a natural completion of the pattern.",
+        "example_failure": "The town was desolate, forgotten, and crumbling.",
+        "example_fix": "The town was desolate. Crumbling. The kind of place that had been forgotten so long it had forgotten itself."
+      },
+
+      "not_x_but_y": {
+        "problem": "AI models heavily favour the 'not X, but Y' corrective construction. 'Not a threat, but a promise.' 'Not anger, but something closer to grief.' 'Not the words themselves, but the silence between them.' This is elegant once. It is mechanical when it appears three times per page.",
+        "rule": "Maximum once per scene. If the contrast is important, find another way to express it. Often the 'not X' half is unnecessary, just state the Y."
+      },
+
+      "rhetorical_question_answer_pairs": {
+        "problem": "AI models use the pattern of posing a rhetorical question then immediately answering it. 'What did she feel? Not anger, something worse.' 'Why had he come? The answer was simpler than she expected.' This is a pacing device that becomes a tic when overused.",
+        "rule": "Questions in prose should be genuine, either the character's actual thought or a question the narrative leaves unanswered. Avoid the setup-payoff rhythm of question followed by immediate answer."
+      },
+
+      "present_participle_openings": {
+        "problem": "AI models frequently begin sentences with present participles (ing-words). 'Walking to the window, she noticed...' 'Turning the corner, he saw...' 'Reaching for the door, the boy paused.' These create a monotonous rhythm when stacked and often imply simultaneous action that is physically impossible.",
+        "rule": "Maximum one participle opening per page. Vary sentence openings: subject-first, prepositional phrase, adverbial, dialogue. The goal is rhythmic variety."
+      },
+
+      "the_appositive_hedge": {
+        "problem": "AI models insert appositive phrases that describe rather than integrate. 'The shop, a relic from better times, stood at the corner.' 'Dalton, a man who understood power, smiled.' 'The ledger, which was older than any of them, crinkled in his hands.' These constructions pause the sentence to provide information that could be woven into the action.",
+        "rule": "Test every appositive: can this information be shown through action instead? 'The shop, a relic from better times' becomes 'The shop's sign had faded to ghosts of letters.' The information is the same. The delivery is active, not parenthetical."
+      },
+
+      "the_explanatory_suffix": {
+        "problem": "AI models append explanatory clauses that over-determine meaning. 'She flinched, which surprised her.' 'He smiled, though it didn't reach his eyes.' 'The room fell silent, a sign that something had changed.' The prose explains what it has just shown, as though it does not trust the reader to interpret the image.",
+        "rule": "Trust the image. 'She flinched' is enough. If the flinch matters, the reader will register it. If 'which surprised her' is important, show the surprise through a subsequent action rather than narrating it as a suffix."
+      },
+
+      "the_almost_construction": {
+        "problem": "AI models use 'almost' and 'nearly' as hedges that avoid committing to a sensation or action. 'She almost smiled.' 'He nearly flinched.' 'There was an almost imperceptible shift.' These constructions signal that the model is uncertain about what the character actually does.",
+        "rule": "Commit. Either she smiled or she didn't. If the intention is ambiguity, her face moved toward a smile but stopped, describe the specific physical event. 'The corner of her mouth twitched, then stilled.'"
+      },
+
+      "sentence_length_uniformity": {
+        "problem": "AI models tend to produce sentences of similar length, creating a metronomic rhythm. Human prose varies sentence length dramatically, short punches between long flowing passages. AI prose hums at a steady middle length.",
+        "rule": "Vary deliberately. Follow a long, complex sentence with a short one. Let a three-word sentence land after a paragraph of elaborate description. The rhythm should be irregular, like breathing under stress."
+      }
+    }
+  },
+
+  "level_4_emotional_and_sensory_patterns": {
+    "title": "Emotional and Sensory Defaults",
+    "principle": "AI models treat emotion as information to be transmitted rather than experience to be created. They name feelings, describe internal states in abstract terms, and over-signal emotional content to ensure the reader does not miss it. Human writing tends to show emotion through behaviour, physicality, and environmental detail, trusting the reader to interpret.",
+
+    "patterns": {
+
+      "named_emotions": {
+        "problem": "AI models state emotions directly: 'She felt angry.' 'A wave of sadness washed over him.' 'Fear gripped her.' These are information, not experience. The reader is told what to feel rather than being made to feel it.",
+        "rule": "Delete every instance where an emotion is named. Replace with the specific physical, behavioural, or environmental manifestation of that emotion. 'She felt angry' becomes what angry looks like in THIS person: a jaw clenched, a glass set down too hard, a sentence bitten in half.",
+        "banned_constructions": [
+          "felt a wave of [emotion]",
+          "a surge of [emotion]",
+          "[emotion] washed over",
+          "[emotion] gripped/seized",
+          "a pang of [emotion]",
+          "a flicker of [emotion]",
+          "a stab of [emotion]",
+          "[emotion] bubbled/welled up",
+          "something shifted inside",
+          "an overwhelming sense of",
+          "couldn't shake the feeling of",
+          "a knot formed in [body part]",
+          "a lump formed in [throat]",
+          "heart sank/soared/raced/hammered (when used as the primary emotional signal rather than supporting detail)"
+        ]
+      },
+
+      "the_sensory_cliche_cluster": {
+        "problem": "AI models reach for the same sensory descriptions repeatedly. These have appeared so frequently in training data that they have lost all specificity.",
+        "banned_or_flagged": [
+          "the air was thick with [tension/smoke/anticipation]",
+          "the silence was deafening",
+          "time seemed to slow/stop/stand still",
+          "the world fell away",
+          "goosebumps/gooseflesh",
+          "a shiver ran down/up [spine]",
+          "breath [character] didn't know [they] were holding",
+          "let out a breath",
+          "blood ran cold",
+          "stomach dropped/lurched/knotted",
+          "eyes burned/stung with unshed tears",
+          "jaw clenched/tightened (when used as sole emotional indicator)",
+          "hands trembled/shook (when used as sole emotional indicator)",
+          "nostrils flared",
+          "pulse quickened"
+        ],
+        "rule": "These are not wrong individually. They become markers when they cluster. Maximum one per scene, and only if it is the most specific, accurate description of what is happening. Prefer unique physical details over stock sensory responses."
+      },
+
+      "atmospheric_over_determination": {
+        "problem": "AI models describe environments in ways that telegraph the emotional content of the scene. A sad scene takes place in rain. A tense scene takes place in darkness. A hopeful scene takes place at dawn. This is pathetic fallacy used as a crutch rather than a choice.",
+        "rule": "The environment should create texture, not duplicate the emotion. A sad scene in bright sunshine is more interesting than a sad scene in rain, because the contrast creates tension. Use environment to complicate, not to underline."
+      }
+    }
+  },
+
+  "level_5_structural_patterns": {
+    "title": "Structural and Architectural Patterns",
+    "principle": "AI models organise prose using templates inherited from the dominant structures in training data: five-paragraph essays, journalistic inverted pyramids, listicles, and instructional content. These templates produce clear, well-organised prose that feels like it was assembled rather than written.",
+
+    "patterns": {
+
+      "the_mirror_opening_and_closing": {
+        "problem": "AI models frequently bookend scenes or passages by returning to the opening image, phrase, or motif. 'The rain was still falling when she left' closing a scene that opened with rain. This is a legitimate technique used so reflexively by AI that it becomes a signature.",
+        "rule": "If you open and close with the same image, ask whether the closure is earned or reflexive. Sometimes returning to the opening is powerful. More often, the scene should end somewhere the opening did not predict."
+      },
+
+      "symmetric_scene_structure": {
+        "problem": "AI models tend to produce scenes with balanced, symmetric structures: if there is tension, there is resolution; if there is a question, there is an answer; if there is conflict, there is reconciliation. Every beat is matched by its complement within the same scene.",
+        "rule": "Leave things unresolved. Let tension carry across scene boundaries. End scenes before the argument is settled. Start scenes after the important thing has already happened. Asymmetry is drama."
+      },
+
+      "the_summary_paragraph": {
+        "problem": "AI models conclude scenes, sections, or chapters with summary paragraphs that restate what has just happened or what it means. 'As she walked away, she realised that everything had changed.' 'The conversation had shifted something between them, though neither could say exactly what.'",
+        "rule": "Cut the last paragraph of every scene. See if the scene is stronger without it. In most cases, it will be. The penultimate moment is almost always the real ending."
+      },
+
+      "section_headers_in_prose": {
+        "problem": "AI models insert implicit section breaks or thematic headers into creative prose, creating a modular structure that reads like assembled segments rather than continuous narrative.",
+        "rule": "Creative prose should flow. If a section break is needed, use white space. Never use headers, horizontal rules, or other structural markers that belong to non-fiction formatting."
+      },
+
+      "the_introductory_throat_clearing": {
+        "problem": "AI models begin scenes with throat-clearing: establishing context, setting the stage, providing background before the action begins. The first paragraph or two often contain no drama, only preparation for drama.",
+        "rule": "Start in the middle of the action. Start with dialogue. Start with a physical detail. Cut the first paragraph of every scene and see if the scene still works. Respect the reader's ability to orient themselves without being oriented."
+      },
+
+      "equal_weight_distribution": {
+        "problem": "AI models distribute attention evenly across elements: every character gets a description, every object in a room gets mentioned, every sensory channel gets a check-in. This creates democratic but undramatic prose, everything is equally present, so nothing is foregrounded.",
+        "rule": "Choose what matters. In any scene, one or two details should dominate. Everything else should be absent or peripheral. What you leave out tells the reader as much as what you include."
+      }
+    }
+  },
+
+  "level_6_narrative_and_voice_patterns": {
+    "title": "Narrative Voice Patterns",
+    "principle": "AI models produce prose that lacks a situated speaker. The text emerges from nowhere, addressed to no one in particular, with no stake in its claims. Human writing is always written FROM somewhere: a perspective, a set of biases, a level of knowledge, a mood. AI prose is epistemically flat: equally confident about everything, equally detailed about everything, equally measured in its observations.",
+
+    "patterns": {
+
+      "omniscient_default": {
+        "problem": "AI models default to omniscient narration that knows everything about every character simultaneously. Even in close-third or first-person POV, the prose slips into awareness of other characters' internal states, future events, or information the viewpoint character could not possess.",
+        "rule": "Lock the POV. If the scene is in the viewpoint character's perspective, the prose can only know what they know, see what they see, misunderstand what they misunderstand. Other characters' emotions should be inferred from behaviour, not stated as fact."
+      },
+
+      "tonal_uniformity": {
+        "problem": "AI models maintain a consistent register throughout: same vocabulary range, same sentence complexity, same emotional temperature. Human writing modulates constantly, terse during action, expansive during reflection, fragmented during distress.",
+        "rule": "Match the prose to the character's state. If a character is panicking, the sentences should be short, incomplete, repetitive. If a character is contemplative, the prose should slow down and breathe. The writing style should be a diagnostic of the character's psychology."
+      },
+
+      "the_disembodied_narrator": {
+        "problem": "AI narration often reads as though produced by a neutral, well-educated, slightly formal entity that has no relationship to the story being told. Even in first person, the narrator sounds like a calm, articulate analyst rather than a person embedded in their own life.",
+        "rule": "The narrator should have a perspective. Biases. Blind spots. Things they notice and things they miss. A first-person narrator who is a 17-year-old shop assistant should not narrate like a literature professor. The vocabulary, the observations, the things they notice first, all should be consistent with who they are."
+      },
+
+      "exposition_through_narration": {
+        "problem": "AI models deliver backstory and context through direct narration rather than embedding it in action, dialogue, or environmental detail. 'She had been running the cafe since her mother died three years ago' is narration. 'The regulars still called it her mum's place' is exposition embedded in world detail.",
+        "rule": "Backstory should leak into the present rather than being delivered as a briefing. Trust the reader to assemble context from fragments. The less you explain, the more the reader invests in understanding."
+      },
+
+      "retrospective_processing": {
+        "problem": "AI models have characters reflect on events analytically rather than experiencing them in the moment. 'She realised that he had been manipulating her all along' is retrospective processing. The character steps outside the experience to analyse it. Human experience is messier, realisation comes in fragments, often delayed, often incomplete.",
+        "rule": "Keep characters in the present tense of their experience. They should not understand what is happening to them while it happens. Understanding comes later, or not at all. Show the fragments that will later assemble into realisation, but do not assemble them for the reader."
+      }
+    }
+  },
+
+  "level_7_dialogue_patterns": {
+    "title": "Dialogue-Specific Patterns",
+    "principle": "AI-generated dialogue tends to be functional rather than dramatic: it transmits information clearly, takes balanced turns, and avoids the messiness, asymmetry, and indirection of real speech. The dialogue 'works' in that it communicates what the scene needs to communicate, but it does not live.",
+
+    "patterns": {
+
+      "symmetrical_exchange": {
+        "problem": "Characters take equal turns of roughly equal length. A asks, B answers. B asks, A answers. The exchange is a balanced tennis rally with no player dominating.",
+        "rule": "Make it asymmetric. One character talks too much while the other barely speaks. One character interrupts. One character answers a different question than the one asked. Real conversation is a power struggle, not a protocol."
+      },
+
+      "complete_articulation": {
+        "problem": "Characters articulate their thoughts fully and clearly. They express complete ideas in complete sentences. They say what they mean.",
+        "rule": "People stop mid-sentence. They trail off. They start a thought and abandon it. They say 'you know what, never mind.' They express one thing while meaning another. Dialogue should be full of false starts, truncations, and misdirections."
+      },
+
+      "said_bookism_and_attribution": {
+        "problem": "AI models either over-use 'said' replacements ('he exclaimed,' 'she retorted,' 'he mused,' 'she breathed') or over-attribute every line with action beats that narrate the emotion ('she said, clenching her fists' after every line).",
+        "rule": "'Said' is invisible. Use it. Let lines of dialogue stand without attribution when the speaker is clear from context. Action beats should be infrequent and specific, not emotional stage directions attached to every line."
+      },
+
+      "responsive_dialogue": {
+        "problem": "Every line of dialogue directly responds to the previous line. Character A says something, Character B responds to exactly that thing. There are no non sequiturs, no ignored statements, no moments where someone is clearly not listening.",
+        "rule": "Characters should sometimes ignore what was just said. They should respond to what they heard three lines ago. They should change the subject when things get uncomfortable. They should talk past each other. The failure to connect in dialogue IS the drama."
+      },
+
+      "on_the_nose_speech": {
+        "problem": "Characters state their emotions, motivations, and the scene's dramatic function directly. They explain themselves. They articulate the subtext.",
+        "rule": "Characters should almost never say what they actually feel. They talk around it, above it, beneath it, beside it. The words are the surface. The meaning is in the gap between what is said and what is meant."
+      },
+
+      "speechifying": {
+        "problem": "AI models give characters speeches, extended monologues that articulate theme, deliver backstory, or express emotional truth in rhetorically polished paragraphs that no human being would produce in spontaneous conversation.",
+        "rule": "Long speeches should be interrupted, deflected, or undermined. If a character has a lot to say, have them struggle to say it. The most important truths should be delivered in fragments, not manifestos."
+      }
+    }
+  },
+
+  "level_8_meta_patterns": {
+    "title": "Meta-Patterns and Deep Signatures",
+    "principle": "Beyond individual words and structures, AI writing has deeper architectural signatures that emerge from the way language models process and generate text. These are the hardest to identify and the hardest to correct because they operate at the level of how the prose thinks rather than how it speaks.",
+
+    "patterns": {
+
+      "predictability_of_sequence": {
+        "problem": "In AI prose, what comes next is always the most probable next thing. The description follows the expected order: entering a room, the prose moves from visual to auditory to olfactory. Meeting a character, the prose moves from physical appearance to expression to clothing. These sequences are logical and invisible and relentlessly predictable.",
+        "rule": "Disrupt the expected order. Start with the smell before the sight. Notice the shoes before the face. Describe what is absent rather than what is present. The unexpected sequence is what creates the sensation of a particular consciousness observing the world."
+      },
+
+      "completeness_compulsion": {
+        "problem": "AI models feel obligated to be comprehensive. A scene in a room describes the room fully. A character introduction covers appearance, manner, and background. A conversation reaches a conclusion. There are no gaps, no omissions, no deliberate withholdings.",
+        "rule": "Leave things out. The most powerful tool in writing is the gap, the thing you do not describe, the question you do not answer, the detail you deliberately omit. What is left unsaid creates more tension than what is said. What is undescribed invites the reader's imagination."
+      },
+
+      "uniform_confidence": {
+        "problem": "AI prose is equally confident about everything it asserts. The narrator's knowledge does not waver, the descriptions do not hesitate, the judgements do not qualify. This creates epistemically flat prose, a voice that knows everything with the same certainty.",
+        "rule": "Let the narrator be uncertain. Let descriptions contain doubt: 'something that might have been a smile' is more interesting than 'a faint smile' because it admits the limitation of observation. The narrator's confidence should vary with what can genuinely be known."
+      },
+
+      "the_absence_of_error": {
+        "problem": "AI prose is grammatically perfect. It does not contain the controlled imperfections that characterise distinctive human voice: sentence fragments, comma splices used for rhythm, single-word paragraphs, sentences that technically break rules but sound right.",
+        "rule": "Break rules when the rhythm demands it. A sentence fragment can land harder than a complete sentence. A comma splice can create urgency that a full stop would kill. The rules of grammar serve the prose; the prose does not serve the rules."
+      },
+
+      "the_absence_of_ugliness": {
+        "problem": "AI prose is relentlessly polished. Every sentence is well-constructed. Every description is graceful. Every transition is smooth. There is no ugliness, no roughness, no moment where the language is deliberately crude, blunt, or graceless because the content demands it.",
+        "rule": "Let the prose be ugly when the subject is ugly. A violent scene should not be described beautifully. A crude character should not think in elegant metaphors. The texture of the prose should match the texture of the experience."
+      }
+    }
+  },
+
+  "application_rules": {
+    "priority_order": [
+      "Level 8 (meta-patterns) matters most but is hardest to control through instruction alone. It requires the writer to be present in the prose.",
+      "Level 6 and 7 (narrative voice and dialogue) are the most visible markers in creative writing.",
+      "Level 4 (emotional patterns) is the most common failure mode in fiction specifically.",
+      "Level 3 (sentence patterns) is cumulative, individual instances are fine, accumulation is not.",
+      "Level 1 (vocabulary) is the easiest to fix but the least important to fix. Replacing 'delve' with 'explore' does not make AI prose human, it makes it AI prose without the word 'delve'."
+    ],
+
+    "the_fundamental_rule": "No single pattern on this list is proof of AI writing. Human writers use em dashes, write 'she felt a wave of sadness', and produce rule-of-three lists. The issue is ACCUMULATION and FREQUENCY. AI writing is identified not by the presence of any one pattern but by the density of many patterns co-occurring. The goal is not to eliminate every flagged item, it is to reduce the density below the threshold of recognition.",
+
+    "when_to_break_these_rules": [
+      "When a character's voice requires it. A pretentious character might use 'moreover' and 'furthermore' because that is how they talk.",
+      "When the rhythm requires it. Sometimes the em dash is the right punctuation. Sometimes the rule of three is the right structure.",
+      "When breaking the rule would create a different, equally distracting pattern. Avoiding all em dashes while using seventeen semicolons is not an improvement.",
+      "When the specific dramatic moment demands the cliche. 'Time seemed to slow' is a cliche, but in the right moment (a gunshot, a fall, a moment of recognition) the cliche exists because it describes something real."
+    ]
+  },
+
+  "quick_reference_checklist": {
+    "description": "Run this checklist against any passage of creative writing. It is ordered from easiest to hardest to detect.",
+    "checks": [
+      "Scan for banned vocabulary. Flag any word from the Level 1 lists.",
+      "Count em dashes. More than one per 500 words is elevated.",
+      "Count rule-of-three constructions. More than one per page is elevated.",
+      "Check for named emotions. Every 'felt [emotion]' is a failure to show.",
+      "Check for symmetrical dialogue. If turns are roughly equal in length and every line directly responds to the last, the dialogue is AI-patterned.",
+      "Check for the summary paragraph. Read the last paragraph of the scene. Remove it. Is the scene stronger? If yes, it was a summary paragraph.",
+      "Check for throat-clearing. Read the first paragraph of the scene. Remove it. Does the scene still work? If yes, it was throat-clearing.",
+      "Check for retrospective processing. Is any character analysing their own experience in the moment of having it?",
+      "Check for uniform confidence. Does the narrator know everything with equal certainty? Are there gaps, doubts, or moments of limited perception?",
+      "Check for predictable sequence. In descriptions and introductions, is the order the expected one? Could it be disrupted to create a more distinctive perspective?"
+    ]
+  },
+
+  "usage_instructions": {
+    "as_generation_prompt": "Load this JSON before generating creative prose. The model should internalise the suppression list and actively avoid the catalogued patterns during generation. This is more effective than fixing patterns after generation.",
+    "as_analysis_prompt": "Load this JSON and paste a passage. Prompt: 'Scan this passage against the AI-ism Suppression Protocol. Flag every detected pattern by level, cite the specific text, and provide a fix direction.' The output should follow the quick reference checklist order.",
+    "scope_of_application": "This tool operates at the prose level: word choice, punctuation, sentence and paragraph construction, narrative voice, and dialogue. It does not assess dramatic structure or plot architecture. Run it after the underlying drama is sound, so that suppressing the patterns refines prose that is already working rather than polishing a scene that has not yet earned its place."
+  }
+}

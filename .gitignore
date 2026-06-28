@@ -1,0 +1,11 @@
+.DS_Store
+*.tmp
+artifacts/
+*.epub
+*.pdf
+*.mobi
+node_modules/
+build/*
+!build/.gitkeep
+review/*
+!review/.gitkeep

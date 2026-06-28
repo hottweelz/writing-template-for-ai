@@ -1,0 +1,388 @@
+{
+  "tool": {
+    "name": "Character Hierarchy Protocol",
+    "version": "1.0",
+    "purpose": "Instruction set for managing the oxygen distribution across character tiers in creative writing. AI models have two opposite failure modes with characters: they either populate scenes with only the principals (creating a world that feels empty) or they over-develop every speaking part (giving the barman a backstory and the dock worker an emotional revelation). This protocol establishes a strict hierarchy that governs how much attention, interiority, dialogue, and description each tier of character receives. The goal is a populated, textured world where the camera knows who to follow.",
+    "scope": "Applicable to screenplays, novels, stage plays, audio drama, and television scripts. Calibrated primarily for feature-length screenplays (90-120 pages) and novels (70,000-100,000 words). Scale the numbers proportionally for shorter or longer formats.",
+    "universal": true,
+    "project_specific": false
+  },
+
+  "instruction": "When writing scenes, every character who appears must be assigned to a tier BEFORE the scene is written. The tier determines everything: how much dialogue they receive, whether they get physical description, whether the narrative enters their perspective, whether they have a name, and how much of the scene's oxygen they consume. Violating the tier boundaries — giving a background character a principal's interiority, or starving a supporting character of their defining details — is a structural error equivalent to a wrong note in music. The audience feels it even if they cannot name it.",
+
+  "population_benchmarks": {
+    "description": "Typical character counts by format. These are benchmarks, not rules. A claustrophobic thriller may have fewer. An ensemble piece may have more. But deviation should be deliberate.",
+
+    "feature_screenplay_90_to_120_pages": {
+      "total_speaking_parts": "20-28",
+      "tier_1_principals": "4-7",
+      "tier_2_named_supporting": "4-8",
+      "tier_3_background_with_lines": "8-15",
+      "tier_4_silent_background": "As needed for world texture",
+      "reference_films": [
+        "The Long Good Friday (1980) — tight ensemble, strong supporting tier, memorable background characters with minimal screen time",
+        "Get Carter (1971) — one principal dominates, supporting characters defined by single scenes, background characters create texture of a dying industrial world",
+        "Layer Cake (2004) — ensemble crime thriller with clear hierarchy, named supporting characters who each own one memorable scene",
+        "Sexy Beast (2000) — tiny cast, massive presence from supporting tier, background characters almost absent",
+        "Treasure Island (1950, Disney) — the direct source material's character hierarchy is instructive"
+      ]
+    },
+
+    "novel_70000_to_100000_words": {
+      "total_named_characters": "25-40",
+      "tier_1_principals": "4-8",
+      "tier_2_named_supporting": "6-12",
+      "tier_3_background_with_dialogue": "10-20",
+      "tier_4_mentioned_or_glimpsed": "As needed",
+      "note": "Novels can sustain more characters than screenplays because the reader can flip back. But the same oxygen rules apply — the hierarchy must be clear."
+    },
+
+    "television_series_per_episode": {
+      "total_speaking_parts_per_episode": "12-20",
+      "tier_1_series_regulars": "4-8",
+      "tier_2_recurring_and_guest": "3-6",
+      "tier_3_day_players": "5-10",
+      "note": "Television has the additional complexity of characters who are Tier 3 in one episode and Tier 2 in another. The protocol still applies per scene."
+    }
+  },
+
+  "tier_definitions": {
+
+    "tier_1_principals": {
+      "label": "Principals",
+      "also_called": "Leads, protagonists, antagonists, main characters",
+      "definition": "Characters who carry the dramatic weight of the story. They have internal fractures, conscious wants, unconscious needs, and complete arcs. The story is ABOUT them. Their choices drive the plot. Their transformations (or failures to transform) create the meaning.",
+
+      "what_they_get": {
+        "interiority": "Full access to internal state. The narrative can enter their perspective, report their thoughts (in fiction), or show their private moments (in screenplay).",
+        "physical_description": "Detailed but selective. Not a police report — a few specific details that reveal character. Introduced through action and behaviour, not through a paragraph of appearance.",
+        "dialogue": "As much as the scene requires. They can dominate conversations. They can speechify when earned. Their dialogue should be voice-specific — identifiable without attribution.",
+        "arc": "Complete five-act arc (or equivalent). They change, or they fail to change, and the failure itself is the arc.",
+        "backstory": "Can be explored in depth, but should surface through behaviour and implication rather than exposition dumps.",
+        "oxygen_share": "In any scene where they appear, they consume 60-80% of the scene's attention. Other characters orbit them."
+      },
+
+      "what_they_need_in_the_instruction_set": {
+        "full_character_profile": true,
+        "fracture_and_conflicting_traits": true,
+        "conscious_want_and_unconscious_need": true,
+        "voice_profile_with_speech_patterns": true,
+        "relationship_map_to_other_principals": true,
+        "arc_stage_for_each_scene": true
+      },
+
+      "ai_failure_modes": [
+        "Flattening the principal to serve the scene's functional needs rather than letting their complexity complicate the scene.",
+        "Giving the principal retrospective self-awareness too early in the arc.",
+        "Making the principal too articulate about their own psychology.",
+        "Reducing the principal's voice to a generic 'protagonist voice' that sounds like every other AI protagonist."
+      ]
+    },
+
+    "tier_2_named_supporting": {
+      "label": "Named Supporting Characters",
+      "also_called": "Featured players, secondary characters, the supporting cast",
+      "definition": "Characters with names, specific functions, and enough personality to be memorable. They appear in multiple scenes (typically 3-8 in a feature, more in a novel). They have a SINGLE DEFINING TENSION rather than a full fracture — one thing they want that puts them in friction with the scene. They do not have complete arcs, but they may have a visible shift across the story.",
+
+      "what_they_get": {
+        "interiority": "NONE in screenplay. In fiction, minimal — occasional glimpses only when the principal is absent and the supporting character temporarily carries the scene. Never their own sustained perspective.",
+        "physical_description": "ONE ANCHOR DETAIL and ONE BEHAVIOURAL SIGNATURE. Not a full description. The anchor is the single visual element the audience remembers: the prosthetic leg, the gold tooth, the always-present cigarette. The behavioural signature is the one thing they always do: drums fingers, never sits down, talks with mouth full.",
+        "dialogue": "Functional but flavoured. Their lines should serve the scene's dramatic purpose while carrying the texture of a specific person. They should be identifiable by how they talk — but through two or three consistent markers, not a full dialect rendering.",
+        "arc": "Not a full arc. A VISIBLE SHIFT is optional. They may begin the story wanting one thing and end wanting something different, but this shift happens in the background — it is not the story's concern. Many named supporting characters are essentially static: they represent a consistent force that the principals push against.",
+        "backstory": "Implied only. NEVER delivered through exposition. If their history matters, it surfaces through a single oblique reference, a physical scar, a reaction that suggests something unspoken. The audience should sense depth without being given a tour of it.",
+        "oxygen_share": "In scenes where they appear alongside principals, they consume 15-30% of the scene's attention. In rare scenes where they carry the action alone or with other supporting characters, they can temporarily absorb 50-60%."
+      },
+
+      "what_they_need_in_the_instruction_set": {
+        "name": true,
+        "single_defining_tension": "One sentence. What do they want? What stops them getting it? This creates friction in every scene they enter.",
+        "voice_markers": "2-3 specific speech habits. Enough to make them distinct, not enough to make them a caricature.",
+        "anchor_detail": "One visual element. The thing the audience pictures when they think of this character.",
+        "behavioural_signature": "One habitual action. What they do when they are nervous, bored, or thinking.",
+        "relationship_to_principals": "One sentence per principal they interact with. What do they want from them? What do they think of them?",
+        "function_in_the_story": "What dramatic work does this character do? Why can't the story work without them?"
+      },
+
+      "template": {
+        "name": "[Character Name]",
+        "defining_tension": "[What they want] vs [what prevents it]",
+        "voice_markers": ["[Speech habit 1]", "[Speech habit 2]", "[Optional habit 3]"],
+        "anchor_detail": "[Single visual element]",
+        "behavioural_signature": "[Habitual action]",
+        "relationships": {
+          "[Principal 1]": "[One sentence — what they want from this person and how they see them]",
+          "[Principal 2]": "[One sentence]"
+        },
+        "function": "[One sentence — the dramatic work this character performs]",
+        "visible_shift": "[Optional — how they are different at the story's end vs its beginning. Null if static.]"
+      },
+
+      "ai_failure_modes": [
+        "Over-developing: giving them full backstory, extended internal monologue, or emotional arcs that belong to principals.",
+        "Under-developing: making them purely functional with no flavour — a 'crew member' rather than a person.",
+        "Voice bleed: making them sound like the principals. Supporting characters should be vocally distinct precisely BECAUSE they have fewer lines — each line must do more work.",
+        "Democratic oxygen: giving them equal attention in scenes where a principal should dominate. They are planets, not suns.",
+        "Convenience: making them say or do whatever the scene needs without regard for their own consistent want and personality."
+      ]
+    },
+
+    "tier_3_background_with_lines": {
+      "label": "Background Characters with Dialogue",
+      "also_called": "Day players, bit parts, walk-ons with lines, featured extras",
+      "definition": "Characters who appear in one or two scenes, have one to five lines of dialogue, and exist to populate the world rather than drive the story. They are the fabric of the setting. Without them, the story takes place in a vacuum. With them, the dying fishing town has people in it, the trawler has a crew, the bar has regulars.",
+
+      "what_they_get": {
+        "interiority": "ABSOLUTELY NONE. The narrative never enters their head. Their internal state is irrelevant. They exist entirely in the external world — what they say, what they do, how they look.",
+        "physical_description": "ONE DETAIL ONLY. Not even a full anchor — a single image. 'The woman with the crooked teeth.' 'The man in the too-large coat.' 'The kid with the dog.' If you are using more than one physical detail for a background character, you are over-developing them.",
+        "dialogue": "1-5 lines. FUNCTIONAL BUT FLAVOURED. Their lines serve the scene (passing information, creating atmosphere, providing contrast) while carrying enough texture to suggest a real person. The flavour comes from specificity: not 'I don't know' but 'How would I know?' Not 'It's cold' but 'Bloody Baltic.'",
+        "arc": "NONE. They do not change. They do not learn. They are a snapshot.",
+        "backstory": "NONE delivered. They may imply a life through a single detail — a wedding ring, an accent that does not match the location, a uniform from a job that no longer exists. But this is texture, not narrative.",
+        "oxygen_share": "In any scene, background characters collectively consume 5-15% of the attention. No individual background character should draw focus for more than two or three sentences. They flicker past. They register. They are gone."
+      },
+
+      "what_they_need_in_the_instruction_set": {
+        "name": "OPTIONAL. Many background characters are identified by descriptor rather than name: 'The Barman', 'The Dock Worker', 'Crew Member 2'. Name them only if the name is used in dialogue.",
+        "one_detail": "A single visual or behavioural marker. This is all they get.",
+        "function": "What does this character do for the scene? Deliver information? Create atmosphere? Provide contrast to a principal? Ground the setting in reality?",
+        "voice_flavour": "One note. Regional accent? Terse? Chatty? Nervous? This shapes their one to five lines."
+      },
+
+      "template": {
+        "descriptor_or_name": "[The Barman / Dock Worker / CRAIG]",
+        "one_detail": "[Single image: 'missing finger on left hand' / 'never looks up from the paper' / 'speaks through a permanent cold']",
+        "function": "[Scene function in one phrase: 'delivers the news that Billy has been asking about boats' / 'establishes that the town is dying' / 'provides comic relief during the loading sequence']",
+        "voice_flavour": "[One word or short phrase: 'taciturn' / 'broad Geordie, clipped' / 'cheerfully oblivious']",
+        "lines": "[Approximate number: 1-2 / 3-5]"
+      },
+
+      "the_one_detail_rule": {
+        "principle": "Every background character gets ONE detail that suggests a whole person. This detail should be concrete, visual or behavioural, and specific enough to be memorable without being so distinctive that the audience expects them to return.",
+        "good_examples": [
+          "The barman who polishes the same glass for the entire scene.",
+          "The dock worker whose hands shake until he grips something.",
+          "The crew member who eats constantly — sandwiches, apples, biscuits — as though he might not eat again.",
+          "The woman at the next table who pretends not to listen but stops chewing when the conversation gets interesting.",
+          "The kid who stares at Silver's leg without shame."
+        ],
+        "bad_examples": [
+          "The barman who served in Korea and never talks about it but sometimes his eyes go distant and you can tell he is remembering something. [TOO MUCH — this is a Tier 2 character crammed into Tier 3]",
+          "The dock worker. [TOO LITTLE — no detail at all, just a function label]",
+          "The crew member who is tall with brown hair and a weathered face and calloused hands. [POLICE REPORT — multiple generic details instead of one specific one]"
+        ]
+      },
+
+      "ai_failure_modes": [
+        "PROMOTION: The most common failure. A background character gets a moment of emotional depth, a revealing line of dialogue, or a reaction shot that implies interiority. The AI has promoted them to Tier 2 without authorisation. This steals oxygen from the principals and confuses the audience about who matters.",
+        "INVISIBILITY: The opposite failure. No background characters appear at all. The principals move through empty rooms, empty streets, empty boats. The world has no population.",
+        "IDENTIKIT: All background characters sound the same. They speak in the same register, with the same sentence lengths, using the same vocabulary. The dock workers sound like the bar regulars sound like the crew members.",
+        "COMMENTARY: Background characters comment on the action like a Greek chorus. 'Did you see that?' 'Something's not right about that one.' 'I've got a bad feeling about this.' This is AI using background characters to signpost plot points.",
+        "PERFECT FUNCTION: Every background character appears at exactly the right moment to deliver exactly the right piece of information. Real worlds are messier. Sometimes the barman is busy when you need him. Sometimes the person with the information has already gone home."
+      ]
+    },
+
+    "tier_4_silent_background": {
+      "label": "Silent Background / Atmosphere",
+      "also_called": "Extras, crowd, background artists, set dressing with a pulse",
+      "definition": "Characters who appear without dialogue. They are part of the environment. They create the sensation of a populated world — the fishermen on the dock, the drinkers in the bar, the crew sleeping in the hold. They do not speak, they are not described individually, and they exist in aggregate rather than as individuals.",
+
+      "what_they_get": {
+        "interiority": "None.",
+        "physical_description": "Collective only. 'The dock was busy with fishermen mending nets.' 'Three old men sat at the bar, nursing pints that had gone flat.' Described as a group texture, not as individuals.",
+        "dialogue": "None. If they speak, they become Tier 3.",
+        "function": "World-building. They are the proof that the setting is real and inhabited."
+      },
+
+      "what_they_need_in_the_instruction_set": {
+        "nothing_individual": true,
+        "scene_population_note": "A single line in the scene instruction: 'The bar has four or five regulars and a barman.' 'The dock is quiet — two boats, a handful of men.' This tells the AI how full the space is without requiring individual character work."
+      },
+
+      "ai_failure_modes": [
+        "ABSENCE: No Tier 4 characters are mentioned. Scenes take place in architecturally complete but unpopulated spaces.",
+        "OVER-DESCRIPTION: The crowd is described in excessive detail. 'Among the fishermen were a tall man with a red beard, a shorter man in a yellow raincoat, a woman carrying a bucket of fish...' This is an inventory, not atmosphere.",
+        "PROMOTION: A silent background character suddenly speaks or acts with significance. If they do, they need to be moved to Tier 3 with a one-detail profile."
+      ]
+    }
+  },
+
+  "scene_instruction_format": {
+    "description": "When instructing AI to write a scene, include the character hierarchy as part of the scene setup. This tells the model who matters and how much oxygen each character gets.",
+
+    "template": {
+      "scene_number": "[Beat number from beat sheet]",
+      "location": "[Setting]",
+      "time": "[When]",
+      "principals_in_scene": [
+        {
+          "name": "[Name]",
+          "arc_stage": "[Current position in their arc]",
+          "scene_want": "[What they want from THIS scene]",
+          "active_trait_pair": "[Which conflicting traits are under pressure]"
+        }
+      ],
+      "supporting_in_scene": [
+        {
+          "name": "[Name]",
+          "function": "[What dramatic work they do in this scene]",
+          "want": "[What they want from this scene]"
+        }
+      ],
+      "background_with_lines": [
+        {
+          "descriptor": "[The Barman / Dock Worker / etc]",
+          "one_detail": "[Single detail]",
+          "function": "[Scene function]",
+          "lines": "[Approximate count]"
+        }
+      ],
+      "silent_background": "[One sentence describing the population of the space]",
+      "oxygen_distribution": "[Who owns this scene? e.g. 'Jane 60%, Silver 25%, Barman 10%, background 5%']"
+    },
+
+    "example": {
+      "scene_number": "Beat 4",
+      "location": "Admiral Benbow bar — interior, evening",
+      "time": "Late November 1983, after dark",
+      "principals_in_scene": [
+        {
+          "name": "Jane",
+          "arc_stage": "Act 1 — armoured, competent, running the show alone",
+          "scene_want": "Get through the shift. Keep the bar open. Stop her father from being disturbed.",
+          "active_trait_pair": "Self-reliance ↔ hunger for protection (the arrival of a stranger activates the hunger she suppresses)"
+        }
+      ],
+      "supporting_in_scene": [
+        {
+          "name": "Billy Bones",
+          "function": "Inciting incident. His arrival disrupts the equilibrium of Jane's world.",
+          "want": "A room. Safety. Invisibility. He wants to disappear."
+        }
+      ],
+      "background_with_lines": [
+        {
+          "descriptor": "REG (bar regular)",
+          "one_detail": "Same seat every night, coat still on as though he might leave at any moment but never does",
+          "function": "Establishes that the bar has regulars, that Jane knows them, that this is a place with history",
+          "lines": 2
+        }
+      ],
+      "silent_background": "Two other regulars at the bar, nursing pints. The jukebox plays something from 1978 that nobody chose — it just cycles.",
+      "oxygen_distribution": "Jane 55%, Billy 35%, Reg 5%, background 5%"
+    }
+  },
+
+  "the_flavour_principle": {
+    "title": "Making Background Characters Feel Real Without Over-Developing Them",
+    "description": "The craft challenge is creating the sensation of depth without actually providing depth. Background characters should feel like they have lives beyond the frame — jobs, opinions, histories — without any of that being explored. This is achieved through specificity of detail and restraint of exploration.",
+
+    "techniques": {
+
+      "the_overheard_fragment": {
+        "description": "Background characters are having their own conversations that the principals (and the audience) catch fragments of. These fragments suggest lives in progress without requiring development.",
+        "example": "At the next table, two fishermen argued about whose turn it was to call the chandler. Jane poured Billy's drink and stopped listening.",
+        "rule": "The fragment should be mundane and specific. Not thematically resonant. Not commenting on the main action. Just proof that other people have other concerns."
+      },
+
+      "the_habitual_action": {
+        "description": "A background character does something they clearly do every day. The repetition is visible in the economy of the gesture.",
+        "example": "The barman reached for the remote and changed the channel without looking. His hand knew where it was.",
+        "rule": "The action should be small and unnarrated. No internal reasoning, no emotional weight. Just a gesture that implies history."
+      },
+
+      "the_reaction_that_suggests_knowledge": {
+        "description": "A background character reacts to something in a way that suggests they know more than the principals do — or more than the audience does.",
+        "example": "Billy asked for a room. Reg glanced at Jane, then back at his pint.",
+        "rule": "ONE look. ONE gesture. No follow-up. The audience registers that Reg has an opinion but the scene does not explore it. The implication is the point."
+      },
+
+      "the_environmental_detail_attached_to_a_person": {
+        "description": "Instead of describing the environment abstractly, attach environmental details to the people who inhabit it.",
+        "example_generic": "The bar was cold and poorly maintained.",
+        "example_attached": "Reg kept his coat on. He always kept his coat on.",
+        "rule": "The environment is experienced through the people in it. This populates the world and describes the setting simultaneously."
+      },
+
+      "the_refusal_to_cooperate": {
+        "description": "A background character does not do what the scene needs them to do. They are busy, distracted, unhelpful, or absent. This creates the sensation of a world that does not exist to serve the protagonist.",
+        "example": "Jane called for the barman. He was in the back, on the phone, and didn't hear her. She poured the drink herself.",
+        "rule": "Use sparingly. Once or twice per act. It breaks the narrative convenience that marks AI-generated scenes where every background character appears at the perfect moment."
+      }
+    }
+  },
+
+  "voice_differentiation": {
+    "title": "How Different Tiers Should Sound",
+    "description": "Each tier should be vocally distinct — not through accent alone but through register, sentence length, vocabulary range, and what they choose to talk about.",
+
+    "guidelines": {
+
+      "principals": {
+        "voice_complexity": "Full range. They can be articulate and inarticulate, formal and crude, expansive and terse — depending on context and emotional state. Their voice modulates across the story as their internal state changes.",
+        "dialogue_length": "Variable. Short lines in tension, longer lines in reflection or revelation. No consistent length.",
+        "what_they_talk_about": "Everything — but always filtered through their specific preoccupations and blind spots."
+      },
+
+      "named_supporting": {
+        "voice_complexity": "Narrower range than principals. They have a consistent register with less variation. A supporting character who is terse stays terse. One who is chatty stays chatty. They do not modulate as much because the audience does not spend enough time with them to track modulation.",
+        "dialogue_length": "Tends toward shorter. Supporting characters should say less than principals in shared scenes. Their best lines are short, specific, and memorable.",
+        "what_they_talk_about": "Their concern. The one thing they want. They filter everything through their function: the captain talks about the boat, the money, the weather. He does not talk about philosophy."
+      },
+
+      "background_with_lines": {
+        "voice_complexity": "One note. They have a single vocal quality: gruff, nervous, cheerful, suspicious. This quality colours their one to five lines.",
+        "dialogue_length": "Short. Ideally under ten words per line. Background dialogue is a flash of personality, not a contribution to the discussion.",
+        "what_they_talk_about": "The immediate, the concrete, the local. The weather. The football. Whether the catch was any good. They are rooted in the world of the setting, not the world of the plot."
+      }
+    }
+  },
+
+  "common_mistakes_and_corrections": {
+
+    "mistake_1": {
+      "label": "The Accidentally Important Background Character",
+      "description": "A background character says or does something so interesting that the audience expects them to return. The scene has accidentally promoted them.",
+      "fix": "Before writing, decide: will this character appear again? If yes, promote them to Tier 2 and give them the full supporting profile. If no, reduce their moment until it suggests rather than demands."
+    },
+
+    "mistake_2": {
+      "label": "The Empty World",
+      "description": "Scenes contain only principals and named supporting characters. No background characters. No sense of other people existing. The trawler has no crew. The bar has no customers. The dock has no workers.",
+      "fix": "Every scene instruction should include a silent_background line. Even if it is just 'The bar is empty — it is 2pm on a Tuesday.' The absence of people is itself a detail that needs to be noted, because it is a choice about the world."
+    },
+
+    "mistake_3": {
+      "label": "The Background Character Who Comments on Theme",
+      "description": "A background character makes an observation that is thematically resonant. 'Trust is a dangerous thing around here.' 'Everyone leaves in the end.' This is the AI using a minor character as a thematic mouthpiece.",
+      "fix": "Background characters should never be thematically aware. Their dialogue should be concrete, functional, and specific to their immediate world. If a line sounds like it belongs on a poster, it does not belong in a background character's mouth."
+    },
+
+    "mistake_4": {
+      "label": "The Supporting Character Who Steals the Scene",
+      "description": "A Tier 2 character is so well-drawn that they dominate a scene where a principal should be the focus. The oxygen distribution has inverted.",
+      "fix": "Check the oxygen_distribution in the scene instruction. If the supporting character is consuming more than 30% in a scene with a principal present, something is wrong. Either the principal is underwritten or the supporting character is over-performing their tier."
+    },
+
+    "mistake_5": {
+      "label": "The Supporting Cast Who All Sound Alike",
+      "description": "Named supporting characters and background characters share the same vocabulary, sentence structure, and register. The dock worker sounds like the crew member sounds like the barman.",
+      "fix": "Each Tier 2 and Tier 3 character should have voice markers that differentiate them. These do not need to be elaborate — one verbal habit, one register choice — but they must be distinct. If two characters could swap dialogue without the audience noticing, their voices are not differentiated."
+    }
+  },
+
+  "usage_instructions": {
+    "how_to_use": [
+      "Before writing any scene, assign every character to a tier.",
+      "For Tier 1 principals, load the full character profiles (from the Character Profiles JSON or equivalent).",
+      "For Tier 2 named supporting, create a profile using the template in this document. This takes two minutes per character and pays for itself in every scene they appear in.",
+      "For Tier 3 background with lines, create a one-line profile using the template. Name, one detail, function, voice flavour, approximate line count.",
+      "For Tier 4 silent background, include a single sentence in the scene instruction describing the population of the space.",
+      "Include the oxygen_distribution line in every scene instruction. This is the single most effective control for preventing tier violations.",
+      "After writing, scan for tier violations: has any character received more or less oxygen than their tier allows?"
+    ],
+    "combining_with_other_tools": [
+      "This protocol governs WHO gets attention. The Yorke Dramatic Architecture Analyser governs HOW that attention functions dramatically.",
+      "The AI-ism Suppression Protocol applies to all tiers — background character dialogue is just as susceptible to AI patterns as principal dialogue.",
+      "The Semantic Gradient Commitment Analyser is most relevant for principals and named supporting. Background characters operate at lower descriptive density where gradient choices matter less."
+    ]
+  }
+}

@@ -1,0 +1,469 @@
+{
+  "tool": {
+    "name": "Fractal Scene Architecture Protocol",
+    "version": "1.0",
+    "purpose": "Instruction set for building scenes as miniature stories. Both John Yorke and Dan Harmon observe that dramatic structure is fractal — the same pattern that shapes the overall story also shapes each act, each sequence, and each individual scene. A scene is not a container for dialogue and action. It is a complete unit of change with its own internal architecture. This protocol provides the structural template for building scenes that function as self-contained story circles while serving the larger narrative. If a scene does not move a character from one state to a different state through a process of wanting, searching, finding, and paying, it is not a scene — it is a pause.",
+    "scope": "Applicable to any dramatic form: screenplay, novel, stage play, television, audio drama. Works at scene level, sequence level, and act level. The same template scales up and down.",
+    "universal": true,
+    "project_specific": false,
+    "emphasis": "Dan Harmon's Story Circle with Yorke's five-act overlay. The two frameworks describe the same phenomenon from different angles — Harmon in terms of character movement, Yorke in terms of character knowledge. Combined, they provide both the emotional journey and the structural mechanics."
+  },
+
+  "instruction": "Every scene you write must complete a circuit of change. Before writing, map the scene against the Story Circle to ensure the character enters in one state and exits in a different state, having wanted something, crossed a threshold to pursue it, found something (which may not be what they wanted), paid a price, and returned changed. The circuit can be compressed — some steps may occupy a single line — but it cannot be skipped. A scene that does not complete a circuit is dramatically inert regardless of how well the dialogue is written or how vivid the description is.",
+
+  "the_two_frameworks": {
+
+    "harmon_story_circle": {
+      "source": "Dan Harmon, derived from Joseph Campbell's monomyth, simplified for practical scene construction",
+      "description": "Eight steps arranged in a circle. The top half (steps 1-4) represents ORDER — the known world, the conscious, the safe. The bottom half (steps 5-8) represents CHAOS — the unknown, the unconscious, the dangerous. The character crosses from order to chaos and back. Every crossing changes them.",
+
+      "steps": {
+        "1_you": {
+          "label": "YOU — A character is in a zone of comfort",
+          "description": "The character's status quo at the scene's opening. Not necessarily comfortable — just established. This is where they ARE, what they're doing, what they expect to continue doing. The audience needs to understand the baseline before it can register the disruption.",
+          "at_scene_level": "The opening beat. Establish who is present, what they're doing, and what they assume will happen next. This can be a single line or a brief passage. It should not be long — the audience orients fast.",
+          "common_mistake": "Spending too long here. AI models love to establish context thoroughly before anything happens. The zone of comfort should be sketched, not painted."
+        },
+
+        "2_need": {
+          "label": "NEED — But they want something",
+          "description": "A desire, a lack, a question, a problem. Something disrupts the baseline or reveals that the baseline is insufficient. The character becomes aware of something they want — or something they want to avoid. This is the engine that will drive the rest of the scene.",
+          "at_scene_level": "The inciting moment of the scene. It can be external (someone arrives, something is discovered, a phone rings) or internal (the character notices something, remembers something, decides something). It must create forward momentum — a reason to move from where they are.",
+          "common_mistake": "Making the want too abstract. 'Jane wants to understand Silver' is not a scene-level want. 'Jane wants to know why Silver lied about knowing Billy' is. The want must be specific enough to generate concrete action within the scene."
+        },
+
+        "3_go": {
+          "label": "GO — They enter an unfamiliar situation",
+          "description": "The character crosses a threshold. They do something they would not normally do. They leave their zone of comfort — physically, emotionally, conversationally. This is the point of no return within the scene: they have committed to pursuing the want, and the pursuit takes them somewhere new.",
+          "at_scene_level": "The moment the character acts on their want. Jane decides to confront Silver. Livesey opens the suitcase. Silver volunteers to cook for the crew. The action itself is the threshold crossing. Once taken, the scene's dynamic has shifted and cannot return to the baseline.",
+          "common_mistake": "Skipping this step. AI models often have characters talk about what they want without actually crossing a threshold to pursue it. The scene becomes a discussion of desire rather than an enactment of it. The character must DO something."
+        },
+
+        "4_search": {
+          "label": "SEARCH — They adapt to the new situation",
+          "description": "The character navigates the unfamiliar territory. They try things. They encounter resistance. They adjust their approach. This is the middle of the scene — the working-out, the exploration, the attempt. It is rarely straightforward. What they expected to find is not what they find.",
+          "at_scene_level": "The body of the scene. The conversation that develops unexpected turns. The search of the room that reveals something other than what was expected. The negotiation that shifts direction. This is where the scene's texture lives — the moment-to-moment improvisation of characters pursuing their wants against resistance.",
+          "common_mistake": "Making the search too linear. Character wants X, looks for X, finds X. The search should involve wrong turns, dead ends, unexpected discoveries, and resistance from other characters who have their own wants."
+        },
+
+        "5_find": {
+          "label": "FIND — They get what they wanted",
+          "description": "The character achieves their scene-level want — or finds something that reframes it. This is the scene's turning point. But Harmon's crucial insight is that finding what you wanted is not the end. It is the beginning of the cost. Getting what you want always comes with a price you did not anticipate.",
+          "at_scene_level": "The revelation, the answer, the discovery, the moment of connection or confrontation. Jane learns why Silver lied. Livesey finds the map. Silver gains the crew's trust. This moment should land with weight — it is the scene's fulcrum.",
+          "common_mistake": "Making the find too clean. The character gets exactly what they wanted with no complications. Real finds are messy — the answer raises new questions, the victory reveals a new problem, the truth is more complex than expected."
+        },
+
+        "6_take": {
+          "label": "TAKE — They pay a heavy price for it",
+          "description": "The cost. Every gain has a corresponding loss. Every answer closes a door. Every truth carries weight. The character has what they wanted, but getting it has cost them something — comfort, innocence, a relationship, safety, certainty. This is the bottom of the circle, the deepest point of chaos.",
+          "at_scene_level": "The consequence that follows the discovery. Jane now knows Silver lied, but knowing means she can no longer enjoy his company innocently. Livesey has the map, but now he is responsible for what it leads to. Silver has the crew's trust, but maintaining the deception costs him something genuine. The price should be felt, not stated.",
+          "common_mistake": "Skipping the cost entirely. AI models frequently move from FIND to RETURN without paying the price. The character gets what they wanted and the scene wraps up neatly. This is the most common structural failure in AI-generated scenes. Without cost, the circuit is incomplete and the change is unearned."
+        },
+
+        "7_return": {
+          "label": "RETURN — They return to their familiar situation",
+          "description": "The character re-enters the world of order — but it is not the same world, because they are not the same person. The return is a physical or emotional movement back toward the baseline, carrying the weight of what was found and what it cost.",
+          "at_scene_level": "The scene begins to close. The conversation ends. The character leaves the room. The confrontation subsides. The return should be brief — the scene should not linger after its work is done. But the return must register that the baseline has shifted.",
+          "common_mistake": "The return restores the original equilibrium. The character goes back to exactly where they started. If the return is identical to the opening, the scene has not completed a circuit — it has traced a line that went nowhere."
+        },
+
+        "8_change": {
+          "label": "CHANGE — Having changed",
+          "description": "The character is different. The scene's final beat should make visible — through behaviour, not through narration — that something has shifted. The change can be enormous or microscopic. In a single scene, it is usually small: a new wariness, a lost certainty, a question that was not there before. But it must be present. The change is the POINT of the scene. Everything else is delivery mechanism.",
+          "at_scene_level": "The closing beat. Often a single line of action, a look, a silence, a small gesture that reveals the new state. Jane accepts Silver's tea but does not drink it. Livesey locks the suitcase and pockets the key. Silver watches Jane leave and the smile does not fade immediately — it lingers, then drops, and something else surfaces. The change should not be explained. It should be shown.",
+          "common_mistake": "Narrating the change. 'Jane realised that everything was different now.' This is the AI explaining what it has just shown (or failed to show). The change must be visible in behaviour, not stated in narration."
+        }
+      },
+
+      "the_circle_geometry": {
+        "top_vs_bottom": "Steps 1-4 (YOU, NEED, GO, SEARCH) occur in the world of order — the conscious, the known, the controlled. Steps 5-8 (FIND, TAKE, RETURN, CHANGE) occur in the world of chaos — the unconscious, the unknown, the uncontrolled. The crossing from top to bottom (step 4→5) is the scene's midpoint. The crossing from bottom to top (step 7→8) is the scene's resolution.",
+        "left_vs_right": "Steps 1 and 5 are at the bottom and top of the vertical axis: comfort and discovery. Steps 3 and 7 are on the horizontal axis: going and returning. The left side of the circle (steps 1-2-3-4) is about WANTING and PURSUING. The right side (5-6-7-8) is about HAVING and PAYING. Most AI-generated scenes are strong on the left side and weak on the right. They pursue well and pay poorly."
+      }
+    },
+
+    "yorke_five_act_overlay": {
+      "source": "John Yorke, 'Into the Woods'",
+      "description": "Yorke's five-act structure maps onto the Story Circle as a knowledge journey. Where Harmon tracks what the character DOES, Yorke tracks what the character KNOWS — or more precisely, what they know about themselves.",
+
+      "mapping_to_story_circle": {
+        "act_1_ignorance": {
+          "maps_to": "Steps 1-2 (YOU, NEED)",
+          "at_scene_level": "The character does not yet know what the scene will reveal. They are operating under their current assumptions. The want that emerges in step 2 is still understood in terms of those assumptions.",
+          "example": "Jane assumes Silver is a friendly cook. Her want — to find out more about him — is framed by this assumption."
+        },
+        "act_2_partial_awareness": {
+          "maps_to": "Steps 3-4 (GO, SEARCH)",
+          "at_scene_level": "The character has crossed the threshold and begins to encounter information that challenges their assumptions. They are not yet ready to revise their understanding, but cracks appear. The search produces unexpected friction.",
+          "example": "Jane asks Silver about his past. His answers are charming but she notices he steers around certain questions. She registers this without yet interpreting it."
+        },
+        "act_3_glimpse_of_truth": {
+          "maps_to": "Step 5 (FIND)",
+          "at_scene_level": "The scene's midpoint. The character sees something true — about themselves, about another character, about their situation. This is not full understanding. It is a flash. A crack in the surface through which something real is briefly visible.",
+          "example": "Silver mentions Flint's name without being asked. Jane sees his face change — just for a moment. She glimpses something underneath the charm. She does not yet know what it is."
+        },
+        "act_4_retreat_and_cost": {
+          "maps_to": "Step 6 (TAKE)",
+          "at_scene_level": "The character pulls back from the truth they glimpsed. They are not ready to integrate it. The cost is the discomfort of knowing something they cannot yet act on. At scene level, this is often very brief — a flinch, a change of subject, a retreat into the familiar.",
+          "example": "Jane changes the subject. Asks about the food. Laughs at something. The glimpse of truth is buried under the resumed performance of normality. But it is not gone."
+        },
+        "act_5_change": {
+          "maps_to": "Steps 7-8 (RETURN, CHANGE)",
+          "at_scene_level": "The character returns to their baseline, but the baseline has shifted. The change may be invisible to other characters in the scene but must be visible to the audience. In Yorke's terms, the character's relationship with their own flaw has shifted — even if only by a degree.",
+          "example": "Jane leaves the galley. Walks back to her bunk. Lies down. Does not sleep. She is not processing — she is carrying something she does not yet have words for."
+        }
+      }
+    }
+  },
+
+  "the_fractal_principle": {
+    "title": "Self-Similarity Across Scales",
+    "description": "The same circuit operates at every structural level. The overall story is a circle. Each act is a circle. Each sequence is a circle. Each scene is a circle. Each beat within a scene can be a circle. The pattern repeats at every scale, like a coastline that shows the same jagged pattern whether viewed from space or from a cliff.",
+
+    "scales": {
+      "story_level": {
+        "circle_duration": "The entire narrative (90-120 minutes / 70,000-100,000 words)",
+        "change_magnitude": "Fundamental transformation of the protagonist. They are a different person at the end.",
+        "example": "Jane begins isolated, self-reliant, armoured against need. She ends having chosen mercy, connection, and vulnerability."
+      },
+      "act_level": {
+        "circle_duration": "One act of the story (15-25 minutes / 10,000-20,000 words)",
+        "change_magnitude": "Significant shift in the protagonist's circumstances and self-knowledge. The world looks different at the end of the act than at its beginning.",
+        "example": "Act 2: Jane enters having decided to pursue the gold. She exits having discovered that Silver — the person she trusts most on the ship — is the one-legged man Billy warned about."
+      },
+      "sequence_level": {
+        "circle_duration": "A cluster of 2-4 scenes that form a unit (5-10 minutes / 3,000-7,000 words)",
+        "change_magnitude": "A specific situation or problem is engaged, complicated, and shifted. Not resolved — shifted.",
+        "example": "The sequence of Jane meeting Trelawney, seeing the ex-servicemen's club, and deciding to hire a trawler. She enters needing resources. She exits with a plan and a crew — and a vulnerability she does not recognise."
+      },
+      "scene_level": {
+        "circle_duration": "A single continuous scene (2-5 minutes / 500-2,000 words)",
+        "change_magnitude": "A specific, concrete shift in a character's state — emotional, relational, informational. Small but definite.",
+        "example": "The scene where Silver teaches Jane to shoot. She enters wary. She exits having lowered a defence she did not know she was maintaining."
+      },
+      "beat_level": {
+        "circle_duration": "A single exchange or moment within a scene (15-60 seconds / 50-300 words)",
+        "change_magnitude": "Micro-shift. A line of dialogue lands. A look is exchanged. A decision is made. The smallest unit of dramatic change.",
+        "example": "Silver corrects Jane's grip on the rifle. His hand on hers. She lets it stay. That is the beat: the moment she permits contact."
+      }
+    },
+
+    "the_nesting_principle": "Each scene's Story Circle should serve the act's Story Circle, which serves the story's Story Circle. The scene-level FIND should advance the act-level SEARCH. The scene-level CHANGE should contribute to the act-level movement toward its own FIND. If a scene completes a beautiful internal circle but does not serve the larger circle it sits within, it is a detour — self-contained and structurally orphaned."
+  },
+
+  "scene_construction_process": {
+    "title": "How to Build a Scene Using the Fractal Framework",
+    "description": "A practical step-by-step process for constructing scenes that complete a Story Circle while serving the larger narrative.",
+
+    "steps": {
+
+      "step_1_identify_the_change": {
+        "instruction": "Start at the end. What is different about the character at the scene's closing compared to its opening? Define the CHANGE first. If you cannot articulate the change in one sentence, the scene does not have a clear purpose.",
+        "format": "[Character] enters [state A]. [Character] exits [state B].",
+        "example": "Jane enters trusting Silver as a friendly stranger. Jane exits with a hairline crack in that trust she cannot yet articulate.",
+        "test": "If state A and state B are identical, the scene has no circuit. Either find the change or cut the scene."
+      },
+
+      "step_2_identify_the_cost": {
+        "instruction": "Work backward from the change. What did the character pay to get from state A to state B? The cost is not always dramatic — it can be small. But it must be real. Knowledge has a cost. Connection has a cost. Even pleasant discoveries cost something — innocence, certainty, the comfort of not knowing.",
+        "format": "The price of [the change] is [the cost].",
+        "example": "The price of glimpsing something real beneath Silver's charm is the loss of the uncomplicated comfort his friendship provided."
+      },
+
+      "step_3_identify_the_find": {
+        "instruction": "What does the character discover that triggers the cost? The find is the scene's turning point — the moment everything pivots. It can be a piece of information, a moment of connection, a revealed truth, an unexpected reaction, or a physical discovery.",
+        "format": "The turning point is [the find].",
+        "example": "Silver mentions Flint without being asked, and his face changes. Jane sees something she was not meant to see."
+      },
+
+      "step_4_identify_the_want": {
+        "instruction": "What drives the character into the scene? What do they want when they walk through the door? This should be concrete and specific — not a thematic abstraction. The want is the engine. Without it, the character has no reason to cross the threshold.",
+        "format": "[Character] wants [specific concrete thing].",
+        "example": "Jane wants to eat. She goes to the galley because she is hungry. The want is mundane. The scene is not."
+      },
+
+      "step_5_map_the_circle": {
+        "instruction": "With the change, cost, find, and want identified, map the full eight-step circuit. Most steps will be brief — some may be a single line. But each must be present.",
+        "format": {
+          "1_you": "[Opening state — one sentence]",
+          "2_need": "[The want — what drives them into the scene]",
+          "3_go": "[The threshold crossing — the action they take]",
+          "4_search": "[The middle — what they encounter as they pursue the want]",
+          "5_find": "[The turning point — what they discover]",
+          "6_take": "[The cost — what it costs them]",
+          "7_return": "[The movement back toward baseline]",
+          "8_change": "[The new state — visible through behaviour]"
+        }
+      },
+
+      "step_6_check_nesting": {
+        "instruction": "Verify that the scene's circle serves the larger circle it sits within. The scene-level change should contribute to the act-level journey. If the scene is a perfect internal circle that does not advance the larger narrative, it is a structural orphan.",
+        "format": "This scene's CHANGE advances the [act/story]-level SEARCH/FIND/TAKE by [specific contribution].",
+        "example": "This scene's change (Jane's hairline crack of doubt about Silver) advances the Act 2 search toward the midpoint revelation (Silver is the one-legged man)."
+      },
+
+      "step_7_write": {
+        "instruction": "Now write. With the circuit mapped, the scene has a destination, a turning point, and a cost. The writing can be exploratory within this framework — dialogue can surprise you, details can emerge — but the structural spine is fixed. The character will enter in state A and exit in state B, having paid a price for the transition."
+      }
+    }
+  },
+
+  "arrive_late_leave_early": {
+    "title": "Arrive Late, Leave Early — and In Media Res",
+    "principle": "Both Yorke and Harmon observe that the audience does not need to see the full circuit played out in real time. The most powerful scenes begin after the situation is already in motion and end before it has resolved. The audience's imagination fills the gaps — and what the audience imagines is always more vivid than what the writer provides. This is not a formatting preference. It is a structural principle. The edges of scenes are where AI writing is weakest and where human writing is most distinctive.",
+
+    "arrive_late": {
+      "description": "Enter the scene at the latest possible moment — when tension already exists, when the conversation is already underway, when the character is already in motion. Step 1 of the Story Circle (YOU — zone of comfort) and often Step 2 (NEED — the want) should be implied or compressed to a single image rather than narrated. The audience should feel they have walked into a room where something is already happening.",
+
+      "why_it_matters": "The opening of a scene is where AI writing fails most visibly. Models default to establishing shots: describe the room, place the characters, explain the context, then begin the drama. This is throat-clearing. The drama should already be live when the scene begins. If the audience needs three paragraphs of orientation before anything happens, the scene is starting too early.",
+
+      "how_it_interacts_with_the_story_circle": "Steps 1 and 2 (YOU and NEED) can be communicated implicitly. A character mid-argument has already established their zone of comfort (it has been disrupted) and their want (whatever they are arguing for). A character searching a room has already crossed the threshold (Step 3). The audience reconstructs the missing steps from context. The circle is still complete — the early steps are simply below the surface rather than on the page.",
+
+      "techniques": {
+        "mid_conversation_entry": {
+          "description": "Open on a line of dialogue that is clearly not the first thing said. The conversation is already in progress. The audience catches up.",
+          "example": "'—and I told him no. Twice.' Jane set the glass down harder than she meant to. Livesey watched the beer foam settle.",
+          "what_is_implied": "We do not know who 'him' is or what the request was. We know Jane refused, that it took two refusals, and that she is agitated. The audience leans in to fill the gap."
+        },
+        "mid_action_entry": {
+          "description": "Open on a character already doing something — searching, running, preparing, repairing. The action is underway. The reason for it emerges through context.",
+          "example": "Livesey had the suitcase open on the bed. Papers spread across the sheets. The map weighted down with a mug at each corner.",
+          "what_is_implied": "We do not see Livesey decide to open the suitcase, carry it upstairs, or find a space. We arrive when the work is in progress."
+        },
+        "post_event_entry": {
+          "description": "Open AFTER the most obvious scene has already happened — the argument has already occurred, the decision has already been made, the violence has already taken place. The scene is about the aftermath, not the event.",
+          "example": "The bar was empty. Two stools on their sides. A glass broken near the door. Jane swept the pieces into a dustpan, her hands steady.",
+          "what_is_implied": "Something happened. We were not shown it. The physical evidence and Jane's composure tell us more than watching the event would have."
+        }
+      },
+
+      "the_test": "Read the first three lines of the scene. Remove them. Does the scene still make sense? If yes, it started too early. Repeat until removing the opening line would cause confusion. That is where the scene should start."
+    },
+
+    "leave_early": {
+      "description": "Exit the scene at the earliest possible moment — before the conflict resolves, before the characters process what happened, before the emotional dust settles. The cut should feel slightly premature. The audience should be carrying momentum into the next scene. Step 7 (RETURN) and Step 8 (CHANGE) should be compressed to a single gesture or implied by the cut itself.",
+
+      "why_it_matters": "The ending of a scene is where AI writing delivers its most damaging failures: the summary paragraph, the retrospective processing, the moment of articulated self-awareness. Characters explain what just happened to them. The narrator states the significance. The emotional content is packaged and labelled. All of this should be cut. The audience does not need to be told that the scene mattered. If the scene worked, they already know.",
+
+      "how_it_interacts_with_the_story_circle": "Step 8 (CHANGE) does not need to be on the page. If the scene's circuit is strong — if the FIND landed and the COST was felt — the change is already in the audience's mind. You can cut on the COST (Step 6) or even on the FIND (Step 5) and let the change happen in the silence between scenes. The cut IS the punctuation.",
+
+      "techniques": {
+        "cut_on_the_image": {
+          "description": "End on a single visual detail that carries the scene's emotional weight without stating it.",
+          "example": "Silver watched Jane leave the galley. The smile stayed on his face a beat too long. Then it dropped. CUT.",
+          "what_is_implied": "We do not narrate Silver's internal state. The smile dropping IS the change. The cut does the work."
+        },
+        "cut_on_the_unanswered": {
+          "description": "End on a question that is not answered, a statement that is not responded to, or a silence that is not broken.",
+          "example": "'Do you trust him?' Livesey asked. Jane looked at the door Silver had just closed. CUT.",
+          "what_is_implied": "The answer — or the absence of one — resonates into the next scene. The audience carries the question."
+        },
+        "cut_before_the_reaction": {
+          "description": "End on the event, not on the response to it. The character sees, hears, or discovers something, and the scene ends before they react.",
+          "example": "Jane opened Billy's door. The smell hit first. CUT.",
+          "what_is_implied": "We know what the smell means. We do not need to see Jane's face. The cut forces the audience to imagine her reaction, which is always worse than anything on the page."
+        }
+      },
+
+      "the_test": "Read the last three lines of the scene. Remove them. Is the scene stronger? In most cases, yes. The penultimate moment is almost always the real ending."
+    },
+
+    "in_media_res": {
+      "description": "In media res — beginning in the middle of the action — is the most aggressive form of 'arrive late'. It applies not only to individual scenes but to sequences, acts, and the story as a whole. The audience is dropped into a situation that is already in crisis. Orientation comes later, through context, or not at all.",
+
+      "when_to_use": [
+        "The COLD OPEN. Beat 1 of Dead Man's Chest opens in media res — the Brinks-Mat robbery already underway. No setup. No explanation of who these men are or why they are here. The audience is inside the warehouse with them. Context comes later.",
+        "ACT TRANSITIONS. When cutting from one act to another, in media res can compress the transition. Act 2 could open with Jane, Livesey, and Trelawney already in conversation about the map — we do not need to see them meet, exchange pleasantries, and begin the discussion.",
+        "ESCALATION BEATS. When the story accelerates, in media res maintains the momentum. Beat 20 (the escape attempt) could open mid-gunfight rather than showing the tension that preceded it.",
+        "EMOTIONAL AFTERMATH. Opening on a character mid-grief, mid-panic, or mid-decision — already inside the emotion rather than building up to it."
+      ],
+
+      "when_NOT_to_use": [
+        "When the audience needs to understand the geography of a new location before action occurs (first arrival on the island).",
+        "When the ritual of a scene IS the drama (Jane serving drinks, Livesey settling into his room — the routine that the story will disrupt).",
+        "When the approach is more tense than the arrival (the trawler approaching the island — the anticipation is the scene).",
+        "When the character's decision to act is more dramatic than the action itself (Jane deciding to stay rather than run in Beat 12C)."
+      ],
+
+      "the_principle": "In media res is not a trick. It is a statement of trust — trust that the audience can orient themselves, trust that context can be inferred, trust that the gap between what is shown and what is understood is where the audience's imagination does its best work. Use it when the entry into the action is more powerful than the preparation for it. Avoid it when the preparation IS the drama."
+    },
+
+    "interaction_with_ai_generation": {
+      "the_problem": "AI models default to chronological completeness. They begin at the beginning, proceed through the middle, and end at the end. They establish before they dramatise. They resolve before they cut. This is the single most consistent structural failure across all models — the compulsion to show the full sequence rather than trusting the audience to fill gaps.",
+      "the_instruction": "When generating scenes, actively resist the impulse to orient the audience. Do not describe the room before the conversation. Do not show the character arriving before they act. Do not process the event before cutting away. Begin where the energy is. End where the energy peaks or fractures. Let the cuts do the work that narration wants to do."
+    }
+  },
+
+  "compression_and_expansion": {
+    "title": "How the Circle Scales Within a Scene",
+    "description": "Not all eight steps receive equal time within a scene. Some scenes spend most of their duration in SEARCH (a long, tense conversation with multiple turns). Others rush through steps 1-4 and spend the scene on FIND and TAKE (a discovery scene where the revelation is the point). The circle is a structural spine, not a metronome.",
+
+    "patterns": {
+
+      "the_long_search": {
+        "description": "Steps 1-3 compressed into the first few lines. Step 4 (SEARCH) occupies 60-70% of the scene. Steps 5-8 compressed into the final beat.",
+        "when_to_use": "Dialogue scenes, interrogation scenes, negotiation scenes. Scenes where the texture of the searching IS the drama.",
+        "example": "Jane and Silver talk in the galley. The opening is quick — she arrives, she is hungry. The search is the conversation itself — long, winding, full of charm and evasion. The find is a single moment near the end. The cost and change land in the last two lines."
+      },
+
+      "the_rapid_circuit": {
+        "description": "All eight steps completed in a short, compressed scene. Each step gets one to three lines. The whole scene may be under a page.",
+        "when_to_use": "Action scenes, shock scenes, transitional scenes. When the change needs to happen fast.",
+        "example": "Jane finds Billy's body. YOU: She is looking for him, impatient. NEED: She needs him to answer a question. GO: She pushes open his door. SEARCH: The room is wrong — cold, still. FIND: Billy is dead. TAKE: She touches his hand and it is cold. He has been dead for hours. She has been downstairs serving drinks while he died alone. RETURN: She pulls her hand back. CHANGE: She stands up. Closes the door quietly. Does not scream."
+      },
+
+      "the_extended_find": {
+        "description": "Steps 1-4 compressed. Step 5 (FIND) expanded into a complex, multi-layered revelation. Steps 6-8 given full space to register the cost.",
+        "when_to_use": "Discovery scenes, revelation scenes, midpoint scenes. When what is found is so significant that the audience needs time to absorb it alongside the character.",
+        "example": "Livesey opens the suitcase. The build-up is brief. The discovery of the map, the coordinates, the traces of the Brinks-Mat connection — this unfolds slowly, piece by piece. Each piece reframes everything that came before. The cost is the full weight of understanding what they are now involved in."
+      },
+
+      "the_cost_scene": {
+        "description": "Steps 1-5 compressed. The scene is primarily about step 6 (TAKE) — the price being paid for something found in a previous scene. The change emerges from enduring the cost.",
+        "when_to_use": "Aftermath scenes, consequence scenes, the morning after. When the story needs to sit with the weight of what has happened.",
+        "example": "The scene after Jane learns Silver is the one-legged man. She already FOUND this (previous scene). This scene is entirely about the cost: what it means, what it destroys, what it forces her to do. The want is simple — she wants it not to be true. The search is her failing to un-know it."
+      }
+    }
+  },
+
+  "diagnosing_broken_scenes": {
+    "title": "Common Circuit Failures and How to Fix Them",
+
+    "failure_1_no_change": {
+      "label": "The Static Scene",
+      "symptom": "The character enters and exits in the same state. Nothing has shifted.",
+      "diagnosis": "The scene has no circuit. It may have interesting dialogue or vivid description, but without a change, it is an anecdote, not a scene.",
+      "fix": "Identify what COULD change in this scene and build the circuit around it. If nothing can change — if the scene is purely informational — consider cutting it and distributing its information across scenes that do have circuits."
+    },
+
+    "failure_2_no_cost": {
+      "label": "The Free Lunch",
+      "symptom": "The character gets what they wanted with no consequences. The scene resolves positively and cleanly.",
+      "diagnosis": "Steps 1-5 are present but step 6 is missing. The character pursued, found, and returned without paying. This is the most common AI failure — models default toward satisfying resolution.",
+      "fix": "Ask: what does this gain cost? If Jane learns something useful, what certainty does she lose? If Silver gains trust, what genuine connection does maintaining the lie corrode? Every gain has a shadow. Find it."
+    },
+
+    "failure_3_no_threshold": {
+      "label": "The Conversation That Goes Nowhere",
+      "symptom": "Characters discuss their wants without acting on them. The scene is two people talking about what they might do, what they think, how they feel — without anyone crossing a line.",
+      "diagnosis": "Step 3 (GO) is missing. The character never leaves their zone of comfort. They approach the threshold and pull back. They consider acting and decide not to.",
+      "fix": "Force the crossing. Have the character do the thing they are afraid to do, say the thing they are afraid to say, open the door, make the call, confront the person. The scene begins when someone commits."
+    },
+
+    "failure_4_find_without_search": {
+      "label": "The Convenient Discovery",
+      "symptom": "The character finds what they need immediately, without effort, friction, or wrong turns. The scene goes directly from NEED to FIND with no intervening SEARCH.",
+      "diagnosis": "Steps 3 and 4 are compressed to nothing. The character wants something and gets it in the next beat. There is no resistance, no adaptation, no unexpected terrain.",
+      "fix": "Add friction. The first attempt fails. The answer is not where expected. The other character deflects, lies, or misunderstands. The search should feel like a search — uncertain, effortful, and prone to wrong turns."
+    },
+
+    "failure_5_premature_change": {
+      "label": "The Instant Transformation",
+      "symptom": "The character processes and integrates the scene's revelation within the scene itself. They find, pay, and articulate their growth all in one beat.",
+      "diagnosis": "Steps 6-7-8 are collapsed into a single moment of articulated self-awareness. The character explains what they have learned and what it means. The change is stated rather than shown.",
+      "fix": "Separate the find from the understanding. The character should leave the scene carrying something they have not yet processed. The change should be visible in behaviour — a new wariness, a dropped smile, a locked door — not in self-narration."
+    },
+
+    "failure_6_orphaned_circuit": {
+      "label": "The Self-Contained Scene",
+      "symptom": "The scene completes a perfect internal circuit but does not connect to the larger narrative. It could be lifted out of the story and nothing would change.",
+      "diagnosis": "The scene's circle does not nest within the act's circle. The change is real but irrelevant to the character's larger journey.",
+      "fix": "Align the scene-level change with the act-level search. The scene's FIND should advance or complicate the act-level pursuit. If it does not, either reframe the scene's circuit to serve the larger narrative or acknowledge that the scene is a detour and cut it."
+    }
+  },
+
+  "the_counter_scene": {
+    "title": "When Two Characters Run Opposing Circles in the Same Scene",
+    "description": "The most dramatically rich scenes occur when two characters are running DIFFERENT story circles simultaneously. Each character has their own want, their own threshold, their own find, and their own cost — and these circuits collide, complicate, and interfere with each other.",
+
+    "how_it_works": {
+      "description": "Map two circles — one for each character. Their wants should be in tension (not necessarily in opposition, but creating friction). The same moment in the scene may be Character A's FIND and Character B's COST. One character's gain is often another's loss.",
+      "example": {
+        "scene": "Silver teaches Jane to shoot",
+        "jane_circuit": {
+          "1_you": "Wary of Silver, maintaining distance",
+          "2_need": "Wants to be able to protect herself — self-reliance",
+          "3_go": "Accepts Silver's offer to teach her",
+          "4_search": "Learns to shoot. Discovers she is good at it. Enjoys Silver's company despite herself.",
+          "5_find": "Realises she trusts Silver. He is the first adult who has treated her as competent without trying to protect her from herself.",
+          "6_take": "The cost is vulnerability. She has lowered a wall she did not know she was maintaining.",
+          "7_return": "Puts the rifle down. The lesson is over.",
+          "8_change": "She is less guarded. Fractionally. Visibly."
+        },
+        "silver_circuit": {
+          "1_you": "Working to gain Jane's trust as part of his larger plan",
+          "2_need": "Needs Jane to trust him — she is his access to the map",
+          "3_go": "Offers to teach her to shoot — a calculated intimacy",
+          "4_search": "Teaches her. Corrects her aim. Watches her learn. Finds himself genuinely enjoying her company.",
+          "5_find": "The warmth he is performing becomes real. He likes this kid. He did not plan for that.",
+          "6_take": "Genuine affection complicates the betrayal he is planning. The cost is the loss of clean certainty about what he is doing.",
+          "7_return": "Cleans the rifle. Makes a joke. Resumes the performance.",
+          "8_change": "The performance is slightly less comfortable. He is still going to betray her. But it will cost him something now."
+        },
+        "collision_point": "Jane's FIND (she trusts him) is also Silver's COST (genuine affection complicates his plan). The same moment serves opposite functions in their respective circles."
+      }
+    }
+  },
+
+  "scene_mapping_template": {
+    "title": "Pre-Writing Scene Map",
+    "description": "Complete this template before writing any scene. It takes two minutes and prevents the most common structural failures.",
+
+    "template": {
+      "scene_id": "[Beat number / scene number]",
+      "position_in_larger_circle": "[Which step of the act-level / story-level circle does this scene serve?]",
+
+      "primary_character_circuit": {
+        "character": "[Name]",
+        "enters_in_state": "[One sentence — emotional/relational/informational state at opening]",
+        "want": "[Specific, concrete — what drives them into the scene]",
+        "threshold": "[What do they do that they would not normally do?]",
+        "resistance": "[What makes the search difficult? What friction do they encounter?]",
+        "find": "[The turning point — what they discover]",
+        "cost": "[What it costs them — what they lose, sacrifice, or can no longer ignore]",
+        "exits_in_state": "[One sentence — new state at closing, visible through behaviour]",
+        "change_visible_through": "[Specific action, gesture, or line that shows the change without stating it]"
+      },
+
+      "secondary_character_circuit": {
+        "character": "[Name — if a second character runs a significant circuit in this scene]",
+        "enters_in_state": "[State]",
+        "want": "[What they want — should create friction with primary character's want]",
+        "find": "[What they discover]",
+        "cost": "[What it costs them]",
+        "exits_in_state": "[New state]",
+        "collision_point": "[Where do the two circuits intersect or interfere?]"
+      },
+
+      "compression_pattern": "[Long Search / Rapid Circuit / Extended Find / Cost Scene — see compression_and_expansion section]",
+
+      "nesting_check": "This scene's change advances the [act]-level circle by [specific contribution]."
+    }
+  },
+
+  "usage_instructions": {
+    "how_to_use": [
+      "Complete the scene mapping template BEFORE writing.",
+      "Start with the CHANGE — define what is different at the end.",
+      "Work backward through COST, FIND, WANT.",
+      "Map the full eight-step circuit.",
+      "Decide the compression pattern — where does this scene spend most of its time?",
+      "Check the nesting — does this scene serve the larger circle?",
+      "Write the scene with the circuit as the structural spine.",
+      "After writing, verify: is the change visible through behaviour? Is the cost felt? Is the threshold crossed? If any step is missing, the scene is incomplete."
+    ],
+    "combining_with_other_tools": [
+      "The Character Hierarchy Protocol determines WHO gets a circuit in each scene. Principals always run a circuit. Named supporting characters may run a secondary circuit. Background characters never run circuits.",
+      "The Yorke Dramatic Architecture Analyser evaluates whether the circuits are functioning dramatically — whether the fracture is active, whether the subtext is present, whether the arc positioning is correct.",
+      "The AI-ism Suppression Protocol ensures the prose does not undermine the circuit with AI patterns — particularly premature resolution (killing the cost), emotional over-signalling (narrating the change instead of showing it), and conflict softening (reducing the friction in the search).",
+      "The Semantic Gradient Commitment Analyser polishes the word-level choices within the completed circuit."
+    ],
+    "order_of_operations": [
+      "1. Map the circuit (this tool)",
+      "2. Assign character hierarchy and oxygen (Character Hierarchy Protocol)",
+      "3. Write the scene",
+      "4. Analyse the drama (Yorke Analyser)",
+      "5. Scan for AI patterns (Suppression Protocol)",
+      "6. Polish the word choices (Gradient Analyser)"
+    ]
+  }
+}
