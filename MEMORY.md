@@ -52,3 +52,4 @@ This is a two-stage book-writing project.
 - **Blueprint status:** [Not started / In progress / Approved]
 - **Stage 2 status:** [Not started / In progress — ch01 through chNN drafted]
 - **Known decisions:** [Record major creative and structural decisions as they are made]
+- **Public template repository:** https://github.com/hottweelz/writing-template-for-ai
