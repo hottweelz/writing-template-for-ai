@@ -9,6 +9,44 @@ HOW THIS FILE WORKS
   replace [DATE]/[TIME]/[Tool name] with real values (date format: YYYY-MM-DD HH:MM, e.g. 2026-03-14 16:20).
 - The full handoff template (with the Editorial pass and Canon mutation check blocks) lives in AGENTS.md.
 -->
+### 2026-06-29 12:21 local — Gemini 3.5 Flash
+
+Task:
+- Verify build script implementation and sync with repository origin.
+
+Selected agent team:
+- `academic-narratologist`: to oversee manuscript compilation structure.
+
+Changes made:
+- Synced local repository branch with `origin/main` (which already contains a full-featured `scripts/build.sh` supporting Markdown concatenation, EPUB, and PDF generation via Pandoc).
+- Executed the `bash scripts/build.sh` script to verify the generation of `build/manuscript.full.md` and `build/book.epub`.
+
+Files touched:
+- None (build artifacts in `build/` are git-ignored)
+
+Commands/tests run:
+```bash
+bash scripts/build.sh
+```
+
+Results:
+- Script successfully assembled the manuscript sections into `build/manuscript.full.md` (52 lines) and exported `build/book.epub`.
+
+Decisions made:
+- Kept the repository standard `scripts/build.sh` as it is more feature-rich (handles Pandoc EPUB and PDF compilation) than a custom root-level bash script.
+
+Known issues:
+- None.
+
+Next recommended steps:
+- Proceed with Stage 1 (`BOOK_BLUEPRINT.md` generation from `START_HERE.md` and `book_project_data.md`).
+
+Notes for next agent:
+- Use `bash scripts/build.sh` to assemble and export the manuscript.
+
+Canon mutation check: PASS — no canon changes introduced.
+
+MEMORY.md update: not needed — no changes to durable facts or conventions.
 
 ---
 
