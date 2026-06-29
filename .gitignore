@@ -10,10 +10,3 @@ node_modules/
 *.epub
 *.pdf
 *.mobi
-
-# Keep empty dirs in the clone, ignore their generated contents
-build/*
-!build/.gitkeep
-review/*
-!review/.gitkeep
-!review/Full-Cold-Review-Prompt.md
