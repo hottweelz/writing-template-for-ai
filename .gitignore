@@ -16,3 +16,4 @@ build/*
 !build/.gitkeep
 review/*
 !review/.gitkeep
+!review/Full-Cold-Review-Prompt.md
