@@ -133,6 +133,10 @@ In short: every tool gets the personas; Claude Code *additionally* gets first-cl
 
 Every chapter goes through an editorial pass before the handoff is recorded. This is mandatory, not optional. It catches structural problems, continuity errors, and prose-quality issues before they compound. The rules live in [.ai/rules/editorial-pass.md](.ai/rules/editorial-pass.md), and a separate [canon-mutation-control](.ai/rules/canon-mutation-control.md) rule stops the AI from quietly changing your story while "improving" it.
 
+## Final cold-read review
+
+After your manuscript is complete, run [review/Full-Cold-Review-Prompt.md](review/Full-Cold-Review-Prompt.md) in a fresh AI chat or chatbot session with the finished manuscript pasted in. Use a new session with no memory of the drafting process so the review functions as a true cold read. The prompt asks the AI to evaluate the manuscript like a skeptical acquisitions editor and return a publication-grade critique. This is a recommended final checkpoint before you revise further, query agents for fixes, or prepare the manuscript for submission.
+
 ---
 
 ## Will this work for my genre?
